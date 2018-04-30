@@ -23,15 +23,16 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
       Me.dgvBooking = New System.Windows.Forms.DataGridView()
-      Me.TextBox1 = New System.Windows.Forms.TextBox()
-      Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-      Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+      Me.txtValue = New System.Windows.Forms.TextBox()
+      Me.cobField = New System.Windows.Forms.ComboBox()
+      Me.cobOperator = New System.Windows.Forms.ComboBox()
       Me.btnUpdate = New System.Windows.Forms.Button()
       Me.btnSearch = New System.Windows.Forms.Button()
       Me.btnAll = New System.Windows.Forms.Button()
       Me.btnExit = New System.Windows.Forms.Button()
       Me.btnAccept = New System.Windows.Forms.Button()
       Me.btnCancel = New System.Windows.Forms.Button()
+      Me.txtSearch = New System.Windows.Forms.TextBox()
       CType(Me.dgvBooking, System.ComponentModel.ISupportInitialize).BeginInit()
       Me.SuspendLayout()
       '
@@ -43,28 +44,29 @@ Partial Class Form1
       Me.dgvBooking.Size = New System.Drawing.Size(727, 415)
       Me.dgvBooking.TabIndex = 0
       '
-      'TextBox1
+      'txtValue
       '
-      Me.TextBox1.Location = New System.Drawing.Point(682, 534)
-      Me.TextBox1.Name = "TextBox1"
-      Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-      Me.TextBox1.TabIndex = 1
+      Me.txtValue.Location = New System.Drawing.Point(682, 534)
+      Me.txtValue.Name = "txtValue"
+      Me.txtValue.Size = New System.Drawing.Size(100, 20)
+      Me.txtValue.TabIndex = 1
       '
-      'ComboBox1
+      'cobField
       '
-      Me.ComboBox1.FormattingEnabled = True
-      Me.ComboBox1.Location = New System.Drawing.Point(55, 534)
-      Me.ComboBox1.Name = "ComboBox1"
-      Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-      Me.ComboBox1.TabIndex = 2
+      Me.cobField.FormattingEnabled = True
+      Me.cobField.Location = New System.Drawing.Point(55, 534)
+      Me.cobField.Name = "cobField"
+      Me.cobField.Size = New System.Drawing.Size(121, 21)
+      Me.cobField.TabIndex = 2
       '
-      'ComboBox2
+      'cobOperator
       '
-      Me.ComboBox2.FormattingEnabled = True
-      Me.ComboBox2.Location = New System.Drawing.Point(368, 534)
-      Me.ComboBox2.Name = "ComboBox2"
-      Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-      Me.ComboBox2.TabIndex = 3
+      Me.cobOperator.FormattingEnabled = True
+      Me.cobOperator.Items.AddRange(New Object() {">", ">=", "=", "<=", "<"})
+      Me.cobOperator.Location = New System.Drawing.Point(368, 534)
+      Me.cobOperator.Name = "cobOperator"
+      Me.cobOperator.Size = New System.Drawing.Size(121, 21)
+      Me.cobOperator.TabIndex = 3
       '
       'btnUpdate
       '
@@ -120,24 +122,32 @@ Partial Class Form1
       Me.btnCancel.Text = "Cancel"
       Me.btnCancel.UseVisualStyleBackColor = True
       '
+      'txtSearch
+      '
+      Me.txtSearch.Location = New System.Drawing.Point(862, 181)
+      Me.txtSearch.Name = "txtSearch"
+      Me.txtSearch.Size = New System.Drawing.Size(100, 20)
+      Me.txtSearch.TabIndex = 10
+      '
       'Form1
       '
-      Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-      Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+      Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
       Me.ClientSize = New System.Drawing.Size(1002, 613)
+      Me.Controls.Add(Me.txtSearch)
       Me.Controls.Add(Me.btnCancel)
       Me.Controls.Add(Me.btnAccept)
       Me.Controls.Add(Me.btnExit)
       Me.Controls.Add(Me.btnAll)
       Me.Controls.Add(Me.btnSearch)
       Me.Controls.Add(Me.btnUpdate)
-      Me.Controls.Add(Me.ComboBox2)
-      Me.Controls.Add(Me.ComboBox1)
-      Me.Controls.Add(Me.TextBox1)
+      Me.Controls.Add(Me.cobOperator)
+      Me.Controls.Add(Me.cobField)
+      Me.Controls.Add(Me.txtValue)
       Me.Controls.Add(Me.dgvBooking)
+      Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
       Me.Name = "Form1"
       Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-      Me.Text = "Booking"
+      Me.Text = "Assignment 10 - Samantha Murphy and Tanner Hoerter"
       CType(Me.dgvBooking, System.ComponentModel.ISupportInitialize).EndInit()
       Me.ResumeLayout(False)
       Me.PerformLayout()
@@ -145,13 +155,14 @@ Partial Class Form1
    End Sub
 
    Friend WithEvents dgvBooking As DataGridView
-   Friend WithEvents TextBox1 As TextBox
-   Friend WithEvents ComboBox1 As ComboBox
-   Friend WithEvents ComboBox2 As ComboBox
+   Friend WithEvents txtValue As TextBox
+   Friend WithEvents cobField As ComboBox
+   Friend WithEvents cobOperator As ComboBox
    Friend WithEvents btnUpdate As Button
    Friend WithEvents btnSearch As Button
    Friend WithEvents btnAll As Button
    Friend WithEvents btnExit As Button
    Friend WithEvents btnAccept As Button
    Friend WithEvents btnCancel As Button
+   Friend WithEvents txtSearch As TextBox
 End Class

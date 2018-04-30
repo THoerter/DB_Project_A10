@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E11ECDBB-7FBF-4E08-8B09-3B37F117A177}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>HoerterT_MurphySam_A10.FormClassBooking</StartupObject>
+    <StartupObject>HoerterT_MurphySam_A10.FormClassLogin</StartupObject>
     <RootNamespace>HoerterT_MurphySam_A10</RootNamespace>
     <AssemblyName>HoerterT_MurphySam_A10</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -80,6 +80,12 @@
       <DependentUpon>FormClassBooking.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormClassLogin.Designer.vb">
+      <DependentUpon>FormClassLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormClassLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -100,6 +106,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormClassBooking.resx">
       <DependentUpon>FormClassBooking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClassLogin.resx">
+      <DependentUpon>FormClassLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
