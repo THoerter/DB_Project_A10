@@ -22,8 +22,8 @@ Partial Class FormClassLogin
    'Do not modify it using the code editor.
    <System.Diagnostics.DebuggerStepThrough()>
    Private Sub InitializeComponent()
-      Me.AcceptButton = New System.Windows.Forms.Button()
-      Me.CancelButton = New System.Windows.Forms.Button()
+      Me.btnLogin = New System.Windows.Forms.Button()
+      Me.btnCancel = New System.Windows.Forms.Button()
       Me.TextBox1 = New System.Windows.Forms.TextBox()
       Me.TextBox2 = New System.Windows.Forms.TextBox()
       Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -32,23 +32,23 @@ Partial Class FormClassLogin
       Me.Label3 = New System.Windows.Forms.Label()
       Me.SuspendLayout()
       '
-      'AcceptButton
+      'btnLogin
       '
-      Me.AcceptButton.Location = New System.Drawing.Point(282, 436)
-      Me.AcceptButton.Name = "AcceptButton"
-      Me.AcceptButton.Size = New System.Drawing.Size(75, 23)
-      Me.AcceptButton.TabIndex = 0
-      Me.AcceptButton.Text = "OK"
-      Me.AcceptButton.UseVisualStyleBackColor = True
+      Me.btnLogin.Location = New System.Drawing.Point(282, 436)
+      Me.btnLogin.Name = "btnLogin"
+      Me.btnLogin.Size = New System.Drawing.Size(75, 23)
+      Me.btnLogin.TabIndex = 0
+      Me.btnLogin.Text = "&Login"
+      Me.btnLogin.UseVisualStyleBackColor = True
       '
-      'CancelButton
+      'btnCancel
       '
-      Me.CancelButton.Location = New System.Drawing.Point(425, 436)
-      Me.CancelButton.Name = "CancelButton"
-      Me.CancelButton.Size = New System.Drawing.Size(75, 23)
-      Me.CancelButton.TabIndex = 1
-      Me.CancelButton.Text = "CANCEL"
-      Me.CancelButton.UseVisualStyleBackColor = True
+      Me.btnCancel.Location = New System.Drawing.Point(425, 436)
+      Me.btnCancel.Name = "btnCancel"
+      Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+      Me.btnCancel.TabIndex = 1
+      Me.btnCancel.Text = "&Cancel"
+      Me.btnCancel.UseVisualStyleBackColor = True
       '
       'TextBox1
       '
@@ -64,7 +64,7 @@ Partial Class FormClassLogin
       Me.TextBox2.Name = "TextBox2"
       Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
       Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-      Me.TextBox2.TabIndex = 3
+      Me.TextBox2.TabIndex = 1
       '
       'TextBox3
       '
@@ -112,8 +112,8 @@ Partial Class FormClassLogin
       Me.Controls.Add(Me.TextBox3)
       Me.Controls.Add(Me.TextBox2)
       Me.Controls.Add(Me.TextBox1)
-      Me.Controls.Add(Me.CancelButton)
-      Me.Controls.Add(Me.AcceptButton)
+      Me.Controls.Add(Me.btnCancel)
+      Me.Controls.Add(Me.btnLogin)
       Me.Name = "FormClassLogin"
       Me.Text = "Login - Samantha Murphy and Tanner Hoerter"
       Me.ResumeLayout(False)
@@ -121,8 +121,8 @@ Partial Class FormClassLogin
 
    End Sub
 
-   Friend WithEvents AcceptButton As Button
-   Friend WithEvents CancelButton As Button
+   Friend WithEvents btnLogin As Button
+   Friend WithEvents btnCancel As Button
    Friend WithEvents TextBox1 As TextBox
    Friend WithEvents TextBox2 As TextBox
    Friend WithEvents TextBox3 As TextBox

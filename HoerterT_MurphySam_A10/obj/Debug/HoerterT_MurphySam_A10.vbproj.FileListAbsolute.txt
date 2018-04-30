@@ -1,7 +1,6 @@
 F:\Database\Homework\A10ProjectFiles\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.exe.config
 J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.exe.config
 J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.vbprojResolveAssemblyReference.cache
-J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.FormClassBooking.resources
 J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.Resources.resources
 J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.vbproj.GenerateResource.Cache
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.exe.config
@@ -16,3 +15,11 @@ C:\Users\tanrh\Desktop\DB_Project_10\trunk\HoerterT_MurphySam_A10\bin\Debug\Hoer
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.xml
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.exe
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.pdb
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.exe
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.xml
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.pdb
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.exe
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.pdb
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\bin\Debug\HoerterT_MurphySam_A10.xml
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.FormClassLogin.resources
+J:\Database\DB_Project\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.FormClassBooking.resources
