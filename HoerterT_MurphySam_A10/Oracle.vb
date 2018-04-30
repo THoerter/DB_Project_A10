@@ -5,13 +5,15 @@
       Cancel
    End Enum
 
-   Friend Shared UserName As String
-   Friend Shared PassWd As String
-   Friend Shared Server As String
+
    Friend Shared Result As ResponseType
 
    Friend Shared frmLogin As New FormClassLogin
-   Private Shared frmBooking As New Form1
+   Private Shared frmBooking As New FormClassBooking
+
+   Friend Shared UserName As String
+   Friend Shared PassWd As String
+   Friend Shared Server As String
 
 
    Friend Shared OracleConnection As New System.Data.OracleClient.OracleConnection
@@ -24,9 +26,9 @@
 
    Public Shared Sub LogInAtRunTime()
       ' For testing 
-      UserName = "yangq"
-      PassWd = "cs3630"
-      Server = "EDDB"
+      'UserName = "yangq"
+      'PassWd = "cs3630"
+      'Server = "EDDB"
 
       OracleConnection.ConnectionString = "Data Source = " & Server & ";Persist Security Info=True;User ID=" & UserName & ";Password=" & PassWd & ";Unicode=True"
 
@@ -41,6 +43,9 @@
    End Sub
 
    Public Shared Sub main()
+      'LogInAtRunTime()
+
+      'Application.Run(New FormClassBooking)
       Dim connected As Boolean
 
       While Not connected
@@ -60,6 +65,7 @@
       If connected Then
          Application.Run(frmBooking)
       End If
+
    End Sub
 
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class FormClassLogin
-   Private Sub AcceptButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnLogin.Click
+   Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
       Oracle.UserName = TextBox1.Text
       Oracle.PassWd = TextBox2.Text
       Oracle.Server = TextBox3.Text
@@ -10,7 +10,7 @@
 
    End Sub
 
-   Private Sub CancelButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
+   Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
       Oracle.Result = Oracle.ResponseType.Cancel
 
       Me.Close()

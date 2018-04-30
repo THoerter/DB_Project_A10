@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E11ECDBB-7FBF-4E08-8B09-3B37F117A177}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>HoerterT_MurphySam_A10.FormClassLogin</StartupObject>
+    <StartupObject>HoerterT_MurphySam_A10.Oracle</StartupObject>
     <RootNamespace>HoerterT_MurphySam_A10</RootNamespace>
     <AssemblyName>HoerterT_MurphySam_A10</AssemblyName>
     <FileAlignment>512</FileAlignment>
