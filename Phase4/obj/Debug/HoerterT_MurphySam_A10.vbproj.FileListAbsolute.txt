@@ -48,3 +48,7 @@ E:\Database\Homework\A10_ProjectFiles\trunk\HoerterT_MurphySam_A10\obj\Debug\Hoe
 E:\Database\Homework\A10_ProjectFiles\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.exe
 E:\Database\Homework\A10_ProjectFiles\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.xml
 E:\Database\Homework\A10_ProjectFiles\trunk\HoerterT_MurphySam_A10\obj\Debug\HoerterT_MurphySam_A10.pdb
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe.config
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.exe
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.xml
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.pdb
