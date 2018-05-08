@@ -9,7 +9,7 @@
    Friend Shared Result As ResponseType
 
    Friend Shared frmLogin As New FormClassLogin
-   Private Shared frmBooking As New FormClassBooking
+   Private Shared frmStaffInfo As New FormStaffInfo
 
    Friend Shared UserName As String
    Friend Shared PassWd As String
@@ -63,7 +63,7 @@
       End While
 
       If connected Then
-         Application.Run(frmBooking)
+         Application.Run(frmStaffInfo)
       End If
 
    End Sub

@@ -61,25 +61,49 @@ Partial Class FormStaffInfo
       Me.TextBox17 = New System.Windows.Forms.TextBox()
       Me.TextBox18 = New System.Windows.Forms.TextBox()
       Me.TextBox19 = New System.Windows.Forms.TextBox()
-      Me.TextBox20 = New System.Windows.Forms.TextBox()
       Me.Label21 = New System.Windows.Forms.Label()
       Me.Label22 = New System.Windows.Forms.Label()
       Me.Label23 = New System.Windows.Forms.Label()
       Me.Label24 = New System.Windows.Forms.Label()
       Me.Label25 = New System.Windows.Forms.Label()
-      Me.TextBox21 = New System.Windows.Forms.TextBox()
-      Me.TextBox22 = New System.Windows.Forms.TextBox()
-      Me.TextBox23 = New System.Windows.Forms.TextBox()
       Me.TextBox24 = New System.Windows.Forms.TextBox()
       Me.TextBox25 = New System.Windows.Forms.TextBox()
-      Me.Button1 = New System.Windows.Forms.Button()
-      Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-      Me.Button2 = New System.Windows.Forms.Button()
-      Me.Button3 = New System.Windows.Forms.Button()
-      Me.Button4 = New System.Windows.Forms.Button()
       Me.Button5 = New System.Windows.Forms.Button()
       Me.Button6 = New System.Windows.Forms.Button()
       Me.Button7 = New System.Windows.Forms.Button()
+      Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+      Me.Button10 = New System.Windows.Forms.Button()
+      Me.Button11 = New System.Windows.Forms.Button()
+      Me.TextBox26 = New System.Windows.Forms.TextBox()
+      Me.Button8 = New System.Windows.Forms.Button()
+      Me.Button9 = New System.Windows.Forms.Button()
+      Me.Button1 = New System.Windows.Forms.Button()
+      Me.Button2 = New System.Windows.Forms.Button()
+      Me.Button3 = New System.Windows.Forms.Button()
+      Me.Button4 = New System.Windows.Forms.Button()
+      Me.TextBox20 = New System.Windows.Forms.TextBox()
+      Me.Button12 = New System.Windows.Forms.Button()
+      Me.Button13 = New System.Windows.Forms.Button()
+      Me.Button14 = New System.Windows.Forms.Button()
+      Me.Label26 = New System.Windows.Forms.Label()
+      Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+      Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+      Me.Label27 = New System.Windows.Forms.Label()
+      Me.Button15 = New System.Windows.Forms.Button()
+      Me.Button16 = New System.Windows.Forms.Button()
+      Me.Button17 = New System.Windows.Forms.Button()
+      Me.Button18 = New System.Windows.Forms.Button()
+      Me.Button19 = New System.Windows.Forms.Button()
+      Me.Button20 = New System.Windows.Forms.Button()
+      Me.Button21 = New System.Windows.Forms.Button()
+      Me.TextBox21 = New System.Windows.Forms.TextBox()
+      Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+      Me.Label28 = New System.Windows.Forms.Label()
+      Me.Label29 = New System.Windows.Forms.Label()
+      Me.Button22 = New System.Windows.Forms.Button()
+      Me.Button23 = New System.Windows.Forms.Button()
+      Me.Button24 = New System.Windows.Forms.Button()
+      Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
       Me.SuspendLayout()
       '
       'Label1
@@ -265,7 +289,7 @@ Partial Class FormStaffInfo
       'Label19
       '
       Me.Label19.AutoSize = True
-      Me.Label19.Location = New System.Drawing.Point(562, 9)
+      Me.Label19.Location = New System.Drawing.Point(515, 9)
       Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label19.Name = "Label19"
       Me.Label19.Size = New System.Drawing.Size(70, 13)
@@ -275,7 +299,7 @@ Partial Class FormStaffInfo
       'Label20
       '
       Me.Label20.AutoSize = True
-      Me.Label20.Location = New System.Drawing.Point(431, 38)
+      Me.Label20.Location = New System.Drawing.Point(384, 41)
       Me.Label20.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label20.Name = "Label20"
       Me.Label20.Size = New System.Drawing.Size(94, 13)
@@ -285,7 +309,7 @@ Partial Class FormStaffInfo
       'TextBox1
       '
       Me.TextBox1.Location = New System.Drawing.Point(101, 38)
-      Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox1.Name = "TextBox1"
       Me.TextBox1.Size = New System.Drawing.Size(196, 20)
       Me.TextBox1.TabIndex = 20
@@ -293,7 +317,7 @@ Partial Class FormStaffInfo
       'TextBox2
       '
       Me.TextBox2.Location = New System.Drawing.Point(101, 60)
-      Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox2.Name = "TextBox2"
       Me.TextBox2.Size = New System.Drawing.Size(196, 20)
       Me.TextBox2.TabIndex = 21
@@ -301,7 +325,7 @@ Partial Class FormStaffInfo
       'TextBox3
       '
       Me.TextBox3.Location = New System.Drawing.Point(101, 82)
-      Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox3.Name = "TextBox3"
       Me.TextBox3.Size = New System.Drawing.Size(196, 20)
       Me.TextBox3.TabIndex = 22
@@ -309,7 +333,7 @@ Partial Class FormStaffInfo
       'TextBox4
       '
       Me.TextBox4.Location = New System.Drawing.Point(101, 150)
-      Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox4.Name = "TextBox4"
       Me.TextBox4.Size = New System.Drawing.Size(196, 20)
       Me.TextBox4.TabIndex = 25
@@ -317,7 +341,7 @@ Partial Class FormStaffInfo
       'TextBox5
       '
       Me.TextBox5.Location = New System.Drawing.Point(101, 128)
-      Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox5.Name = "TextBox5"
       Me.TextBox5.Size = New System.Drawing.Size(196, 20)
       Me.TextBox5.TabIndex = 24
@@ -325,7 +349,7 @@ Partial Class FormStaffInfo
       'TextBox6
       '
       Me.TextBox6.Location = New System.Drawing.Point(101, 105)
-      Me.TextBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox6.Name = "TextBox6"
       Me.TextBox6.Size = New System.Drawing.Size(196, 20)
       Me.TextBox6.TabIndex = 23
@@ -333,7 +357,7 @@ Partial Class FormStaffInfo
       'TextBox7
       '
       Me.TextBox7.Location = New System.Drawing.Point(101, 311)
-      Me.TextBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox7.Name = "TextBox7"
       Me.TextBox7.Size = New System.Drawing.Size(196, 20)
       Me.TextBox7.TabIndex = 31
@@ -341,7 +365,7 @@ Partial Class FormStaffInfo
       'TextBox8
       '
       Me.TextBox8.Location = New System.Drawing.Point(101, 288)
-      Me.TextBox8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox8.Name = "TextBox8"
       Me.TextBox8.Size = New System.Drawing.Size(196, 20)
       Me.TextBox8.TabIndex = 30
@@ -349,7 +373,7 @@ Partial Class FormStaffInfo
       'TextBox9
       '
       Me.TextBox9.Location = New System.Drawing.Point(101, 265)
-      Me.TextBox9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox9.Name = "TextBox9"
       Me.TextBox9.Size = New System.Drawing.Size(196, 20)
       Me.TextBox9.TabIndex = 29
@@ -357,7 +381,7 @@ Partial Class FormStaffInfo
       'TextBox10
       '
       Me.TextBox10.Location = New System.Drawing.Point(101, 242)
-      Me.TextBox10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox10.Name = "TextBox10"
       Me.TextBox10.Size = New System.Drawing.Size(196, 20)
       Me.TextBox10.TabIndex = 28
@@ -365,7 +389,7 @@ Partial Class FormStaffInfo
       'TextBox11
       '
       Me.TextBox11.Location = New System.Drawing.Point(101, 196)
-      Me.TextBox11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox11.Name = "TextBox11"
       Me.TextBox11.Size = New System.Drawing.Size(196, 20)
       Me.TextBox11.TabIndex = 27
@@ -373,7 +397,7 @@ Partial Class FormStaffInfo
       'TextBox12
       '
       Me.TextBox12.Location = New System.Drawing.Point(101, 173)
-      Me.TextBox12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox12.Name = "TextBox12"
       Me.TextBox12.Size = New System.Drawing.Size(196, 20)
       Me.TextBox12.TabIndex = 26
@@ -381,7 +405,7 @@ Partial Class FormStaffInfo
       'TextBox13
       '
       Me.TextBox13.Location = New System.Drawing.Point(101, 408)
-      Me.TextBox13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox13.Name = "TextBox13"
       Me.TextBox13.Size = New System.Drawing.Size(196, 20)
       Me.TextBox13.TabIndex = 35
@@ -389,7 +413,7 @@ Partial Class FormStaffInfo
       'TextBox14
       '
       Me.TextBox14.Location = New System.Drawing.Point(101, 383)
-      Me.TextBox14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox14.Name = "TextBox14"
       Me.TextBox14.Size = New System.Drawing.Size(196, 20)
       Me.TextBox14.TabIndex = 34
@@ -397,7 +421,7 @@ Partial Class FormStaffInfo
       'TextBox15
       '
       Me.TextBox15.Location = New System.Drawing.Point(101, 360)
-      Me.TextBox15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox15.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox15.Name = "TextBox15"
       Me.TextBox15.Size = New System.Drawing.Size(196, 20)
       Me.TextBox15.TabIndex = 33
@@ -405,184 +429,104 @@ Partial Class FormStaffInfo
       'TextBox16
       '
       Me.TextBox16.Location = New System.Drawing.Point(101, 335)
-      Me.TextBox16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox16.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox16.Name = "TextBox16"
       Me.TextBox16.Size = New System.Drawing.Size(196, 20)
       Me.TextBox16.TabIndex = 32
       '
       'TextBox17
       '
-      Me.TextBox17.Location = New System.Drawing.Point(528, 371)
-      Me.TextBox17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox17.Location = New System.Drawing.Point(483, 223)
+      Me.TextBox17.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox17.Name = "TextBox17"
-      Me.TextBox17.Size = New System.Drawing.Size(196, 20)
+      Me.TextBox17.Size = New System.Drawing.Size(204, 20)
       Me.TextBox17.TabIndex = 39
       '
       'TextBox18
       '
-      Me.TextBox18.Location = New System.Drawing.Point(528, 348)
-      Me.TextBox18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox18.Location = New System.Drawing.Point(483, 84)
+      Me.TextBox18.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox18.Name = "TextBox18"
-      Me.TextBox18.Size = New System.Drawing.Size(196, 20)
+      Me.TextBox18.Size = New System.Drawing.Size(204, 20)
       Me.TextBox18.TabIndex = 38
       '
       'TextBox19
       '
-      Me.TextBox19.Location = New System.Drawing.Point(528, 325)
-      Me.TextBox19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox19.Location = New System.Drawing.Point(483, 60)
+      Me.TextBox19.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox19.Name = "TextBox19"
-      Me.TextBox19.Size = New System.Drawing.Size(196, 20)
+      Me.TextBox19.Size = New System.Drawing.Size(204, 20)
       Me.TextBox19.TabIndex = 37
-      '
-      'TextBox20
-      '
-      Me.TextBox20.Location = New System.Drawing.Point(115, 443)
-      Me.TextBox20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-      Me.TextBox20.Name = "TextBox20"
-      Me.TextBox20.Size = New System.Drawing.Size(42, 20)
-      Me.TextBox20.TabIndex = 36
       '
       'Label21
       '
       Me.Label21.AutoSize = True
-      Me.Label21.Location = New System.Drawing.Point(480, 110)
+      Me.Label21.Location = New System.Drawing.Point(445, 63)
       Me.Label21.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label21.Name = "Label21"
-      Me.Label21.Size = New System.Drawing.Size(45, 13)
+      Me.Label21.Size = New System.Drawing.Size(34, 13)
       Me.Label21.TabIndex = 44
-      Me.Label21.Text = "Label21"
+      Me.Label21.Text = "Type:"
       '
       'Label22
       '
       Me.Label22.AutoSize = True
-      Me.Label22.Location = New System.Drawing.Point(480, 133)
+      Me.Label22.Location = New System.Drawing.Point(424, 87)
       Me.Label22.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label22.Name = "Label22"
-      Me.Label22.Size = New System.Drawing.Size(45, 13)
+      Me.Label22.Size = New System.Drawing.Size(55, 13)
       Me.Label22.TabIndex = 43
-      Me.Label22.Text = "Label22"
+      Me.Label22.Text = "Institution:"
       '
       'Label23
       '
       Me.Label23.AutoSize = True
-      Me.Label23.Location = New System.Drawing.Point(480, 156)
+      Me.Label23.Location = New System.Drawing.Point(379, 226)
       Me.Label23.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label23.Name = "Label23"
-      Me.Label23.Size = New System.Drawing.Size(45, 13)
+      Me.Label23.Size = New System.Drawing.Size(100, 13)
       Me.Label23.TabIndex = 42
-      Me.Label23.Text = "Label23"
+      Me.Label23.Text = "Organization Name:"
       '
       'Label24
       '
       Me.Label24.AutoSize = True
-      Me.Label24.Location = New System.Drawing.Point(480, 178)
+      Me.Label24.Location = New System.Drawing.Point(432, 250)
       Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label24.Name = "Label24"
-      Me.Label24.Size = New System.Drawing.Size(45, 13)
+      Me.Label24.Size = New System.Drawing.Size(47, 13)
       Me.Label24.TabIndex = 41
-      Me.Label24.Text = "Label24"
+      Me.Label24.Text = "Position:"
       '
       'Label25
       '
       Me.Label25.AutoSize = True
-      Me.Label25.Location = New System.Drawing.Point(480, 201)
+      Me.Label25.Location = New System.Drawing.Point(420, 278)
       Me.Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
       Me.Label25.Name = "Label25"
-      Me.Label25.Size = New System.Drawing.Size(45, 13)
+      Me.Label25.Size = New System.Drawing.Size(58, 13)
       Me.Label25.TabIndex = 40
-      Me.Label25.Text = "Label25"
-      '
-      'TextBox21
-      '
-      Me.TextBox21.Location = New System.Drawing.Point(528, 199)
-      Me.TextBox21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-      Me.TextBox21.Name = "TextBox21"
-      Me.TextBox21.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox21.TabIndex = 49
-      '
-      'TextBox22
-      '
-      Me.TextBox22.Location = New System.Drawing.Point(528, 176)
-      Me.TextBox22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-      Me.TextBox22.Name = "TextBox22"
-      Me.TextBox22.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox22.TabIndex = 48
-      '
-      'TextBox23
-      '
-      Me.TextBox23.Location = New System.Drawing.Point(528, 153)
-      Me.TextBox23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-      Me.TextBox23.Name = "TextBox23"
-      Me.TextBox23.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox23.TabIndex = 47
+      Me.Label25.Text = "Start Date:"
       '
       'TextBox24
       '
-      Me.TextBox24.Location = New System.Drawing.Point(528, 130)
-      Me.TextBox24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox24.Location = New System.Drawing.Point(483, 433)
+      Me.TextBox24.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox24.Name = "TextBox24"
-      Me.TextBox24.Size = New System.Drawing.Size(196, 20)
+      Me.TextBox24.Size = New System.Drawing.Size(138, 20)
       Me.TextBox24.TabIndex = 46
       '
       'TextBox25
       '
-      Me.TextBox25.Location = New System.Drawing.Point(528, 108)
-      Me.TextBox25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.TextBox25.Location = New System.Drawing.Point(483, 247)
+      Me.TextBox25.Margin = New System.Windows.Forms.Padding(2)
       Me.TextBox25.Name = "TextBox25"
-      Me.TextBox25.Size = New System.Drawing.Size(196, 20)
+      Me.TextBox25.Size = New System.Drawing.Size(204, 20)
       Me.TextBox25.TabIndex = 45
-      '
-      'Button1
-      '
-      Me.Button1.Location = New System.Drawing.Point(49, 437)
-      Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-      Me.Button1.Name = "Button1"
-      Me.Button1.Size = New System.Drawing.Size(29, 30)
-      Me.Button1.TabIndex = 50
-      Me.Button1.Text = "|<"
-      Me.Button1.UseVisualStyleBackColor = True
-      '
-      'ComboBox1
-      '
-      Me.ComboBox1.FormattingEnabled = True
-      Me.ComboBox1.Location = New System.Drawing.Point(101, 218)
-      Me.ComboBox1.Name = "ComboBox1"
-      Me.ComboBox1.Size = New System.Drawing.Size(196, 21)
-      Me.ComboBox1.TabIndex = 54
-      '
-      'Button2
-      '
-      Me.Button2.Location = New System.Drawing.Point(82, 437)
-      Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button2.Name = "Button2"
-      Me.Button2.Size = New System.Drawing.Size(29, 30)
-      Me.Button2.TabIndex = 55
-      Me.Button2.Text = "<"
-      Me.Button2.UseVisualStyleBackColor = True
-      '
-      'Button3
-      '
-      Me.Button3.Location = New System.Drawing.Point(161, 437)
-      Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button3.Name = "Button3"
-      Me.Button3.Size = New System.Drawing.Size(29, 30)
-      Me.Button3.TabIndex = 56
-      Me.Button3.Text = ">"
-      Me.Button3.UseVisualStyleBackColor = True
-      '
-      'Button4
-      '
-      Me.Button4.Location = New System.Drawing.Point(194, 437)
-      Me.Button4.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button4.Name = "Button4"
-      Me.Button4.Size = New System.Drawing.Size(29, 30)
-      Me.Button4.TabIndex = 57
-      Me.Button4.Text = ">|"
-      Me.Button4.UseVisualStyleBackColor = True
       '
       'Button5
       '
-      Me.Button5.Location = New System.Drawing.Point(51, 482)
+      Me.Button5.Location = New System.Drawing.Point(31, 482)
       Me.Button5.Name = "Button5"
       Me.Button5.Size = New System.Drawing.Size(78, 27)
       Me.Button5.TabIndex = 58
@@ -591,7 +535,7 @@ Partial Class FormStaffInfo
       '
       'Button6
       '
-      Me.Button6.Location = New System.Drawing.Point(135, 482)
+      Me.Button6.Location = New System.Drawing.Point(115, 482)
       Me.Button6.Name = "Button6"
       Me.Button6.Size = New System.Drawing.Size(78, 27)
       Me.Button6.TabIndex = 59
@@ -600,29 +544,358 @@ Partial Class FormStaffInfo
       '
       'Button7
       '
-      Me.Button7.Location = New System.Drawing.Point(219, 482)
+      Me.Button7.Location = New System.Drawing.Point(199, 482)
       Me.Button7.Name = "Button7"
       Me.Button7.Size = New System.Drawing.Size(78, 27)
       Me.Button7.TabIndex = 60
       Me.Button7.Text = "Delete"
       Me.Button7.UseVisualStyleBackColor = True
       '
+      'DateTimePicker1
+      '
+      Me.DateTimePicker1.Location = New System.Drawing.Point(483, 35)
+      Me.DateTimePicker1.Name = "DateTimePicker1"
+      Me.DateTimePicker1.Size = New System.Drawing.Size(204, 20)
+      Me.DateTimePicker1.TabIndex = 61
+      '
+      'Button10
+      '
+      Me.Button10.Location = New System.Drawing.Point(449, 108)
+      Me.Button10.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button10.Name = "Button10"
+      Me.Button10.Size = New System.Drawing.Size(55, 30)
+      Me.Button10.TabIndex = 64
+      Me.Button10.Text = "<"
+      Me.Button10.UseVisualStyleBackColor = True
+      '
+      'Button11
+      '
+      Me.Button11.Location = New System.Drawing.Point(387, 108)
+      Me.Button11.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button11.Name = "Button11"
+      Me.Button11.Size = New System.Drawing.Size(58, 30)
+      Me.Button11.TabIndex = 63
+      Me.Button11.Text = "|<"
+      Me.Button11.UseVisualStyleBackColor = True
+      '
+      'TextBox26
+      '
+      Me.TextBox26.Location = New System.Drawing.Point(508, 114)
+      Me.TextBox26.Margin = New System.Windows.Forms.Padding(2)
+      Me.TextBox26.Name = "TextBox26"
+      Me.TextBox26.Size = New System.Drawing.Size(61, 20)
+      Me.TextBox26.TabIndex = 62
+      '
+      'Button8
+      '
+      Me.Button8.Location = New System.Drawing.Point(573, 108)
+      Me.Button8.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button8.Name = "Button8"
+      Me.Button8.Size = New System.Drawing.Size(55, 30)
+      Me.Button8.TabIndex = 65
+      Me.Button8.Text = ">"
+      Me.Button8.UseVisualStyleBackColor = True
+      '
+      'Button9
+      '
+      Me.Button9.Location = New System.Drawing.Point(632, 108)
+      Me.Button9.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button9.Name = "Button9"
+      Me.Button9.Size = New System.Drawing.Size(55, 30)
+      Me.Button9.TabIndex = 66
+      Me.Button9.Text = ">|"
+      Me.Button9.UseVisualStyleBackColor = True
+      '
+      'Button1
+      '
+      Me.Button1.Location = New System.Drawing.Point(242, 438)
+      Me.Button1.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button1.Name = "Button1"
+      Me.Button1.Size = New System.Drawing.Size(55, 30)
+      Me.Button1.TabIndex = 71
+      Me.Button1.Text = ">|"
+      Me.Button1.UseVisualStyleBackColor = True
+      '
+      'Button2
+      '
+      Me.Button2.Location = New System.Drawing.Point(183, 438)
+      Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button2.Name = "Button2"
+      Me.Button2.Size = New System.Drawing.Size(55, 30)
+      Me.Button2.TabIndex = 70
+      Me.Button2.Text = ">"
+      Me.Button2.UseVisualStyleBackColor = True
+      '
+      'Button3
+      '
+      Me.Button3.Location = New System.Drawing.Point(75, 438)
+      Me.Button3.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button3.Name = "Button3"
+      Me.Button3.Size = New System.Drawing.Size(55, 30)
+      Me.Button3.TabIndex = 69
+      Me.Button3.Text = "<"
+      Me.Button3.UseVisualStyleBackColor = True
+      '
+      'Button4
+      '
+      Me.Button4.Location = New System.Drawing.Point(13, 438)
+      Me.Button4.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button4.Name = "Button4"
+      Me.Button4.Size = New System.Drawing.Size(58, 30)
+      Me.Button4.TabIndex = 68
+      Me.Button4.Text = "|<"
+      Me.Button4.UseVisualStyleBackColor = True
+      '
+      'TextBox20
+      '
+      Me.TextBox20.Location = New System.Drawing.Point(135, 444)
+      Me.TextBox20.Margin = New System.Windows.Forms.Padding(2)
+      Me.TextBox20.Name = "TextBox20"
+      Me.TextBox20.Size = New System.Drawing.Size(44, 20)
+      Me.TextBox20.TabIndex = 67
+      '
+      'Button12
+      '
+      Me.Button12.Location = New System.Drawing.Point(591, 143)
+      Me.Button12.Name = "Button12"
+      Me.Button12.Size = New System.Drawing.Size(78, 27)
+      Me.Button12.TabIndex = 74
+      Me.Button12.Text = "Delete"
+      Me.Button12.UseVisualStyleBackColor = True
+      '
+      'Button13
+      '
+      Me.Button13.Location = New System.Drawing.Point(507, 143)
+      Me.Button13.Name = "Button13"
+      Me.Button13.Size = New System.Drawing.Size(78, 27)
+      Me.Button13.TabIndex = 73
+      Me.Button13.Text = "Save"
+      Me.Button13.UseVisualStyleBackColor = True
+      '
+      'Button14
+      '
+      Me.Button14.Location = New System.Drawing.Point(423, 143)
+      Me.Button14.Name = "Button14"
+      Me.Button14.Size = New System.Drawing.Size(78, 27)
+      Me.Button14.TabIndex = 72
+      Me.Button14.Text = "New"
+      Me.Button14.UseVisualStyleBackColor = True
+      '
+      'Label26
+      '
+      Me.Label26.AutoSize = True
+      Me.Label26.Location = New System.Drawing.Point(515, 199)
+      Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+      Me.Label26.Name = "Label26"
+      Me.Label26.Size = New System.Drawing.Size(89, 13)
+      Me.Label26.TabIndex = 75
+      Me.Label26.Text = "Work Experience"
+      '
+      'DateTimePicker2
+      '
+      Me.DateTimePicker2.Location = New System.Drawing.Point(483, 272)
+      Me.DateTimePicker2.Name = "DateTimePicker2"
+      Me.DateTimePicker2.Size = New System.Drawing.Size(204, 20)
+      Me.DateTimePicker2.TabIndex = 76
+      '
+      'DateTimePicker3
+      '
+      Me.DateTimePicker3.Location = New System.Drawing.Point(483, 298)
+      Me.DateTimePicker3.Name = "DateTimePicker3"
+      Me.DateTimePicker3.Size = New System.Drawing.Size(204, 20)
+      Me.DateTimePicker3.TabIndex = 77
+      '
+      'Label27
+      '
+      Me.Label27.AutoSize = True
+      Me.Label27.Location = New System.Drawing.Point(415, 304)
+      Me.Label27.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+      Me.Label27.Name = "Label27"
+      Me.Label27.Size = New System.Drawing.Size(63, 13)
+      Me.Label27.TabIndex = 78
+      Me.Label27.Text = "Finish Date:"
+      '
+      'Button15
+      '
+      Me.Button15.Location = New System.Drawing.Point(591, 358)
+      Me.Button15.Name = "Button15"
+      Me.Button15.Size = New System.Drawing.Size(78, 27)
+      Me.Button15.TabIndex = 86
+      Me.Button15.Text = "Delete"
+      Me.Button15.UseVisualStyleBackColor = True
+      '
+      'Button16
+      '
+      Me.Button16.Location = New System.Drawing.Point(507, 358)
+      Me.Button16.Name = "Button16"
+      Me.Button16.Size = New System.Drawing.Size(78, 27)
+      Me.Button16.TabIndex = 85
+      Me.Button16.Text = "Save"
+      Me.Button16.UseVisualStyleBackColor = True
+      '
+      'Button17
+      '
+      Me.Button17.Location = New System.Drawing.Point(423, 358)
+      Me.Button17.Name = "Button17"
+      Me.Button17.Size = New System.Drawing.Size(78, 27)
+      Me.Button17.TabIndex = 84
+      Me.Button17.Text = "New"
+      Me.Button17.UseVisualStyleBackColor = True
+      '
+      'Button18
+      '
+      Me.Button18.Location = New System.Drawing.Point(632, 323)
+      Me.Button18.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button18.Name = "Button18"
+      Me.Button18.Size = New System.Drawing.Size(55, 30)
+      Me.Button18.TabIndex = 83
+      Me.Button18.Text = ">|"
+      Me.Button18.UseVisualStyleBackColor = True
+      '
+      'Button19
+      '
+      Me.Button19.Location = New System.Drawing.Point(573, 323)
+      Me.Button19.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button19.Name = "Button19"
+      Me.Button19.Size = New System.Drawing.Size(55, 30)
+      Me.Button19.TabIndex = 82
+      Me.Button19.Text = ">"
+      Me.Button19.UseVisualStyleBackColor = True
+      '
+      'Button20
+      '
+      Me.Button20.Location = New System.Drawing.Point(449, 323)
+      Me.Button20.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button20.Name = "Button20"
+      Me.Button20.Size = New System.Drawing.Size(55, 30)
+      Me.Button20.TabIndex = 81
+      Me.Button20.Text = "<"
+      Me.Button20.UseVisualStyleBackColor = True
+      '
+      'Button21
+      '
+      Me.Button21.Location = New System.Drawing.Point(387, 323)
+      Me.Button21.Margin = New System.Windows.Forms.Padding(2)
+      Me.Button21.Name = "Button21"
+      Me.Button21.Size = New System.Drawing.Size(58, 30)
+      Me.Button21.TabIndex = 80
+      Me.Button21.Text = "|<"
+      Me.Button21.UseVisualStyleBackColor = True
+      '
+      'TextBox21
+      '
+      Me.TextBox21.Location = New System.Drawing.Point(508, 329)
+      Me.TextBox21.Margin = New System.Windows.Forms.Padding(2)
+      Me.TextBox21.Name = "TextBox21"
+      Me.TextBox21.Size = New System.Drawing.Size(61, 20)
+      Me.TextBox21.TabIndex = 79
+      '
+      'ComboBox2
+      '
+      Me.ComboBox2.FormattingEnabled = True
+      Me.ComboBox2.Items.AddRange(New Object() {"Type", "Org Name"})
+      Me.ComboBox2.Location = New System.Drawing.Point(483, 407)
+      Me.ComboBox2.Name = "ComboBox2"
+      Me.ComboBox2.Size = New System.Drawing.Size(138, 21)
+      Me.ComboBox2.TabIndex = 87
+      '
+      'Label28
+      '
+      Me.Label28.AutoSize = True
+      Me.Label28.Location = New System.Drawing.Point(449, 410)
+      Me.Label28.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+      Me.Label28.Name = "Label28"
+      Me.Label28.Size = New System.Drawing.Size(29, 13)
+      Me.Label28.TabIndex = 88
+      Me.Label28.Text = "Field"
+      '
+      'Label29
+      '
+      Me.Label29.AutoSize = True
+      Me.Label29.Location = New System.Drawing.Point(445, 436)
+      Me.Label29.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+      Me.Label29.Name = "Label29"
+      Me.Label29.Size = New System.Drawing.Size(34, 13)
+      Me.Label29.TabIndex = 89
+      Me.Label29.Text = "Value"
+      '
+      'Button22
+      '
+      Me.Button22.Location = New System.Drawing.Point(626, 407)
+      Me.Button22.Name = "Button22"
+      Me.Button22.Size = New System.Drawing.Size(61, 21)
+      Me.Button22.TabIndex = 90
+      Me.Button22.Text = "&All"
+      Me.Button22.UseVisualStyleBackColor = True
+      '
+      'Button23
+      '
+      Me.Button23.Location = New System.Drawing.Point(626, 433)
+      Me.Button23.Name = "Button23"
+      Me.Button23.Size = New System.Drawing.Size(61, 20)
+      Me.Button23.TabIndex = 91
+      Me.Button23.Text = "&Search"
+      Me.Button23.UseVisualStyleBackColor = True
+      '
+      'Button24
+      '
+      Me.Button24.Location = New System.Drawing.Point(321, 521)
+      Me.Button24.Name = "Button24"
+      Me.Button24.Size = New System.Drawing.Size(78, 27)
+      Me.Button24.TabIndex = 92
+      Me.Button24.Text = "&Exit"
+      Me.Button24.UseVisualStyleBackColor = True
+      '
+      'DateTimePicker4
+      '
+      Me.DateTimePicker4.Location = New System.Drawing.Point(101, 219)
+      Me.DateTimePicker4.MaxDate = New Date(2018, 5, 18, 0, 0, 0, 0)
+      Me.DateTimePicker4.Name = "DateTimePicker4"
+      Me.DateTimePicker4.Size = New System.Drawing.Size(196, 20)
+      Me.DateTimePicker4.TabIndex = 93
+      Me.DateTimePicker4.Value = New Date(2018, 5, 8, 0, 0, 0, 0)
+      '
       'FormStaffInfo
       '
       Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
       Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-      Me.ClientSize = New System.Drawing.Size(795, 576)
+      Me.ClientSize = New System.Drawing.Size(714, 561)
+      Me.Controls.Add(Me.DateTimePicker4)
+      Me.Controls.Add(Me.Button24)
+      Me.Controls.Add(Me.Button23)
+      Me.Controls.Add(Me.Button22)
+      Me.Controls.Add(Me.Label29)
+      Me.Controls.Add(Me.Label28)
+      Me.Controls.Add(Me.ComboBox2)
+      Me.Controls.Add(Me.Button15)
+      Me.Controls.Add(Me.Button16)
+      Me.Controls.Add(Me.Button17)
+      Me.Controls.Add(Me.Button18)
+      Me.Controls.Add(Me.Button19)
+      Me.Controls.Add(Me.Button20)
+      Me.Controls.Add(Me.Button21)
+      Me.Controls.Add(Me.TextBox21)
+      Me.Controls.Add(Me.Label27)
+      Me.Controls.Add(Me.DateTimePicker3)
+      Me.Controls.Add(Me.DateTimePicker2)
+      Me.Controls.Add(Me.Label26)
+      Me.Controls.Add(Me.Button12)
+      Me.Controls.Add(Me.Button13)
+      Me.Controls.Add(Me.Button14)
+      Me.Controls.Add(Me.Button1)
+      Me.Controls.Add(Me.Button2)
+      Me.Controls.Add(Me.Button3)
+      Me.Controls.Add(Me.Button4)
+      Me.Controls.Add(Me.TextBox20)
+      Me.Controls.Add(Me.Button9)
+      Me.Controls.Add(Me.Button8)
+      Me.Controls.Add(Me.Button10)
+      Me.Controls.Add(Me.Button11)
+      Me.Controls.Add(Me.TextBox26)
+      Me.Controls.Add(Me.DateTimePicker1)
       Me.Controls.Add(Me.Button7)
       Me.Controls.Add(Me.Button6)
       Me.Controls.Add(Me.Button5)
-      Me.Controls.Add(Me.Button4)
-      Me.Controls.Add(Me.Button3)
-      Me.Controls.Add(Me.Button2)
-      Me.Controls.Add(Me.ComboBox1)
-      Me.Controls.Add(Me.Button1)
-      Me.Controls.Add(Me.TextBox21)
-      Me.Controls.Add(Me.TextBox22)
-      Me.Controls.Add(Me.TextBox23)
       Me.Controls.Add(Me.TextBox24)
       Me.Controls.Add(Me.TextBox25)
       Me.Controls.Add(Me.Label21)
@@ -633,7 +906,6 @@ Partial Class FormStaffInfo
       Me.Controls.Add(Me.TextBox17)
       Me.Controls.Add(Me.TextBox18)
       Me.Controls.Add(Me.TextBox19)
-      Me.Controls.Add(Me.TextBox20)
       Me.Controls.Add(Me.TextBox13)
       Me.Controls.Add(Me.TextBox14)
       Me.Controls.Add(Me.TextBox15)
@@ -670,7 +942,7 @@ Partial Class FormStaffInfo
       Me.Controls.Add(Me.Label3)
       Me.Controls.Add(Me.Label2)
       Me.Controls.Add(Me.Label1)
-      Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+      Me.Margin = New System.Windows.Forms.Padding(2)
       Me.Name = "FormStaffInfo"
       Me.Text = "FormStaffInfo"
       Me.ResumeLayout(False)
@@ -717,23 +989,47 @@ Partial Class FormStaffInfo
     Friend WithEvents TextBox17 As TextBox
     Friend WithEvents TextBox18 As TextBox
     Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents Button1 As Button
-   Friend WithEvents ComboBox1 As ComboBox
-   Friend WithEvents Button2 As Button
-   Friend WithEvents Button3 As Button
-   Friend WithEvents Button4 As Button
+   Friend WithEvents Label21 As Label
+   Friend WithEvents Label22 As Label
+   Friend WithEvents Label23 As Label
+   Friend WithEvents Label24 As Label
+   Friend WithEvents Label25 As Label
+   Friend WithEvents TextBox24 As TextBox
+   Friend WithEvents TextBox25 As TextBox
    Friend WithEvents Button5 As Button
    Friend WithEvents Button6 As Button
    Friend WithEvents Button7 As Button
+   Friend WithEvents DateTimePicker1 As DateTimePicker
+   Friend WithEvents Button10 As Button
+   Friend WithEvents Button11 As Button
+   Friend WithEvents TextBox26 As TextBox
+   Friend WithEvents Button8 As Button
+   Friend WithEvents Button9 As Button
+   Friend WithEvents Button1 As Button
+   Friend WithEvents Button2 As Button
+   Friend WithEvents Button3 As Button
+   Friend WithEvents Button4 As Button
+   Friend WithEvents TextBox20 As TextBox
+   Friend WithEvents Button12 As Button
+   Friend WithEvents Button13 As Button
+   Friend WithEvents Button14 As Button
+   Friend WithEvents Label26 As Label
+   Friend WithEvents DateTimePicker2 As DateTimePicker
+   Friend WithEvents DateTimePicker3 As DateTimePicker
+   Friend WithEvents Label27 As Label
+   Friend WithEvents Button15 As Button
+   Friend WithEvents Button16 As Button
+   Friend WithEvents Button17 As Button
+   Friend WithEvents Button18 As Button
+   Friend WithEvents Button19 As Button
+   Friend WithEvents Button20 As Button
+   Friend WithEvents Button21 As Button
+   Friend WithEvents TextBox21 As TextBox
+   Friend WithEvents ComboBox2 As ComboBox
+   Friend WithEvents Label28 As Label
+   Friend WithEvents Label29 As Label
+   Friend WithEvents Button22 As Button
+   Friend WithEvents Button23 As Button
+   Friend WithEvents Button24 As Button
+   Friend WithEvents DateTimePicker4 As DateTimePicker
 End Class

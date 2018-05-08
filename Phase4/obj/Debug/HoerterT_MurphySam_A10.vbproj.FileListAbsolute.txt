@@ -52,3 +52,12 @@ E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_
 E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.exe
 E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.xml
 E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.pdb
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.FormClassLogin.resources
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.FormStaffInfo.resources
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.Resources.resources
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.vbproj.GenerateResource.Cache
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.pdb
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.xml
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe.CodeAnalysisLog.xml
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe.lastcodeanalysissucceeded
