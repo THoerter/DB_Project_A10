@@ -42,68 +42,68 @@ Partial Class FormStaffInfo
       Me.Label18 = New System.Windows.Forms.Label()
       Me.Label19 = New System.Windows.Forms.Label()
       Me.Label20 = New System.Windows.Forms.Label()
-      Me.TextBox1 = New System.Windows.Forms.TextBox()
-      Me.TextBox2 = New System.Windows.Forms.TextBox()
-      Me.TextBox3 = New System.Windows.Forms.TextBox()
-      Me.TextBox4 = New System.Windows.Forms.TextBox()
-      Me.TextBox5 = New System.Windows.Forms.TextBox()
-      Me.TextBox6 = New System.Windows.Forms.TextBox()
-      Me.TextBox7 = New System.Windows.Forms.TextBox()
-      Me.TextBox8 = New System.Windows.Forms.TextBox()
-      Me.TextBox9 = New System.Windows.Forms.TextBox()
-      Me.TextBox10 = New System.Windows.Forms.TextBox()
-      Me.TextBox11 = New System.Windows.Forms.TextBox()
-      Me.TextBox12 = New System.Windows.Forms.TextBox()
-      Me.TextBox13 = New System.Windows.Forms.TextBox()
-      Me.TextBox14 = New System.Windows.Forms.TextBox()
-      Me.TextBox15 = New System.Windows.Forms.TextBox()
-      Me.TextBox16 = New System.Windows.Forms.TextBox()
-      Me.TextBox17 = New System.Windows.Forms.TextBox()
-      Me.TextBox18 = New System.Windows.Forms.TextBox()
-      Me.TextBox19 = New System.Windows.Forms.TextBox()
+      Me.txtStaffNo = New System.Windows.Forms.TextBox()
+      Me.txtFirstName = New System.Windows.Forms.TextBox()
+      Me.txtLastName = New System.Windows.Forms.TextBox()
+      Me.txtState = New System.Windows.Forms.TextBox()
+      Me.txtCity = New System.Windows.Forms.TextBox()
+      Me.txtStreet = New System.Windows.Forms.TextBox()
+      Me.txtCurSalary = New System.Windows.Forms.TextBox()
+      Me.txtPosition = New System.Windows.Forms.TextBox()
+      Me.txtNIN = New System.Windows.Forms.TextBox()
+      Me.txtGender = New System.Windows.Forms.TextBox()
+      Me.txtPhone = New System.Windows.Forms.TextBox()
+      Me.txtZip = New System.Windows.Forms.TextBox()
+      Me.txtPayType = New System.Windows.Forms.TextBox()
+      Me.txtPositionType = New System.Windows.Forms.TextBox()
+      Me.txtHrsPerWk = New System.Windows.Forms.TextBox()
+      Me.txtSalaryScale = New System.Windows.Forms.TextBox()
+      Me.txtOrgName = New System.Windows.Forms.TextBox()
+      Me.txtQualInst = New System.Windows.Forms.TextBox()
+      Me.txtQualType = New System.Windows.Forms.TextBox()
       Me.Label21 = New System.Windows.Forms.Label()
       Me.Label22 = New System.Windows.Forms.Label()
       Me.Label23 = New System.Windows.Forms.Label()
       Me.Label24 = New System.Windows.Forms.Label()
       Me.Label25 = New System.Windows.Forms.Label()
-      Me.TextBox24 = New System.Windows.Forms.TextBox()
-      Me.TextBox25 = New System.Windows.Forms.TextBox()
-      Me.Button5 = New System.Windows.Forms.Button()
-      Me.Button6 = New System.Windows.Forms.Button()
-      Me.Button7 = New System.Windows.Forms.Button()
-      Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-      Me.Button10 = New System.Windows.Forms.Button()
-      Me.Button11 = New System.Windows.Forms.Button()
-      Me.TextBox26 = New System.Windows.Forms.TextBox()
-      Me.Button8 = New System.Windows.Forms.Button()
-      Me.Button9 = New System.Windows.Forms.Button()
-      Me.Button1 = New System.Windows.Forms.Button()
-      Me.Button2 = New System.Windows.Forms.Button()
-      Me.Button3 = New System.Windows.Forms.Button()
-      Me.Button4 = New System.Windows.Forms.Button()
-      Me.TextBox20 = New System.Windows.Forms.TextBox()
-      Me.Button12 = New System.Windows.Forms.Button()
-      Me.Button13 = New System.Windows.Forms.Button()
-      Me.Button14 = New System.Windows.Forms.Button()
+      Me.txtValForSearch = New System.Windows.Forms.TextBox()
+      Me.txtWorkPosition = New System.Windows.Forms.TextBox()
+      Me.btnNewEmpl = New System.Windows.Forms.Button()
+      Me.btnSaveEmpl = New System.Windows.Forms.Button()
+      Me.btnDeleteEmpl = New System.Windows.Forms.Button()
+      Me.DTPickQualDate = New System.Windows.Forms.DateTimePicker()
+      Me.btnPreviousQual = New System.Windows.Forms.Button()
+      Me.btnToBeginningQual = New System.Windows.Forms.Button()
+      Me.txtQualNoDisplay = New System.Windows.Forms.TextBox()
+      Me.btnNextQual = New System.Windows.Forms.Button()
+      Me.btnToEndQual = New System.Windows.Forms.Button()
+      Me.btnToEndEmpl = New System.Windows.Forms.Button()
+      Me.btnNextEmpl = New System.Windows.Forms.Button()
+      Me.btnPreviousEmpl = New System.Windows.Forms.Button()
+      Me.btnToBeginningEmpl = New System.Windows.Forms.Button()
+      Me.txtEmplIDDisplay = New System.Windows.Forms.TextBox()
+      Me.btnDeleteQual = New System.Windows.Forms.Button()
+      Me.btnSaveQual = New System.Windows.Forms.Button()
+      Me.btnNewQual = New System.Windows.Forms.Button()
       Me.Label26 = New System.Windows.Forms.Label()
-      Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-      Me.DateTimePicker3 = New System.Windows.Forms.DateTimePicker()
+      Me.DTPickStartDate = New System.Windows.Forms.DateTimePicker()
+      Me.DTPickEndDate = New System.Windows.Forms.DateTimePicker()
       Me.Label27 = New System.Windows.Forms.Label()
-      Me.Button15 = New System.Windows.Forms.Button()
-      Me.Button16 = New System.Windows.Forms.Button()
-      Me.Button17 = New System.Windows.Forms.Button()
-      Me.Button18 = New System.Windows.Forms.Button()
-      Me.Button19 = New System.Windows.Forms.Button()
-      Me.Button20 = New System.Windows.Forms.Button()
-      Me.Button21 = New System.Windows.Forms.Button()
-      Me.TextBox21 = New System.Windows.Forms.TextBox()
-      Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+      Me.btnDeleteWork = New System.Windows.Forms.Button()
+      Me.btnSaveWork = New System.Windows.Forms.Button()
+      Me.btnNewWork = New System.Windows.Forms.Button()
+      Me.btnToEndWork = New System.Windows.Forms.Button()
+      Me.btnNextWork = New System.Windows.Forms.Button()
+      Me.btnPreviousWork = New System.Windows.Forms.Button()
+      Me.btnToBeginningWork = New System.Windows.Forms.Button()
+      Me.txtWorkExDisplay = New System.Windows.Forms.TextBox()
+      Me.CBoxFieldSel = New System.Windows.Forms.ComboBox()
       Me.Label28 = New System.Windows.Forms.Label()
       Me.Label29 = New System.Windows.Forms.Label()
-      Me.Button22 = New System.Windows.Forms.Button()
-      Me.Button23 = New System.Windows.Forms.Button()
-      Me.Button24 = New System.Windows.Forms.Button()
-      Me.DateTimePicker4 = New System.Windows.Forms.DateTimePicker()
+      Me.btnAll = New System.Windows.Forms.Button()
+      Me.btnSearch = New System.Windows.Forms.Button()
+      Me.btnExit = New System.Windows.Forms.Button()
+      Me.DTPickDOB = New System.Windows.Forms.DateTimePicker()
       Me.SuspendLayout()
       '
       'Label1
@@ -306,157 +306,157 @@ Partial Class FormStaffInfo
       Me.Label20.TabIndex = 19
       Me.Label20.Text = "Qualification Date:"
       '
-      'TextBox1
+      'txtStaffNo
       '
-      Me.TextBox1.Location = New System.Drawing.Point(101, 38)
-      Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox1.Name = "TextBox1"
-      Me.TextBox1.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox1.TabIndex = 20
+      Me.txtStaffNo.Location = New System.Drawing.Point(101, 38)
+      Me.txtStaffNo.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtStaffNo.Name = "txtStaffNo"
+      Me.txtStaffNo.Size = New System.Drawing.Size(196, 20)
+      Me.txtStaffNo.TabIndex = 20
       '
-      'TextBox2
+      'txtFirstName
       '
-      Me.TextBox2.Location = New System.Drawing.Point(101, 60)
-      Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox2.Name = "TextBox2"
-      Me.TextBox2.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox2.TabIndex = 21
+      Me.txtFirstName.Location = New System.Drawing.Point(101, 60)
+      Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtFirstName.Name = "txtFirstName"
+      Me.txtFirstName.Size = New System.Drawing.Size(196, 20)
+      Me.txtFirstName.TabIndex = 21
       '
-      'TextBox3
+      'txtLastName
       '
-      Me.TextBox3.Location = New System.Drawing.Point(101, 82)
-      Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox3.Name = "TextBox3"
-      Me.TextBox3.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox3.TabIndex = 22
+      Me.txtLastName.Location = New System.Drawing.Point(101, 82)
+      Me.txtLastName.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtLastName.Name = "txtLastName"
+      Me.txtLastName.Size = New System.Drawing.Size(196, 20)
+      Me.txtLastName.TabIndex = 22
       '
-      'TextBox4
+      'txtState
       '
-      Me.TextBox4.Location = New System.Drawing.Point(101, 150)
-      Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox4.Name = "TextBox4"
-      Me.TextBox4.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox4.TabIndex = 25
+      Me.txtState.Location = New System.Drawing.Point(101, 150)
+      Me.txtState.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtState.Name = "txtState"
+      Me.txtState.Size = New System.Drawing.Size(196, 20)
+      Me.txtState.TabIndex = 25
       '
-      'TextBox5
+      'txtCity
       '
-      Me.TextBox5.Location = New System.Drawing.Point(101, 128)
-      Me.TextBox5.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox5.Name = "TextBox5"
-      Me.TextBox5.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox5.TabIndex = 24
+      Me.txtCity.Location = New System.Drawing.Point(101, 128)
+      Me.txtCity.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtCity.Name = "txtCity"
+      Me.txtCity.Size = New System.Drawing.Size(196, 20)
+      Me.txtCity.TabIndex = 24
       '
-      'TextBox6
+      'txtStreet
       '
-      Me.TextBox6.Location = New System.Drawing.Point(101, 105)
-      Me.TextBox6.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox6.Name = "TextBox6"
-      Me.TextBox6.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox6.TabIndex = 23
+      Me.txtStreet.Location = New System.Drawing.Point(101, 105)
+      Me.txtStreet.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtStreet.Name = "txtStreet"
+      Me.txtStreet.Size = New System.Drawing.Size(196, 20)
+      Me.txtStreet.TabIndex = 23
       '
-      'TextBox7
+      'txtCurSalary
       '
-      Me.TextBox7.Location = New System.Drawing.Point(101, 311)
-      Me.TextBox7.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox7.Name = "TextBox7"
-      Me.TextBox7.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox7.TabIndex = 31
+      Me.txtCurSalary.Location = New System.Drawing.Point(101, 311)
+      Me.txtCurSalary.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtCurSalary.Name = "txtCurSalary"
+      Me.txtCurSalary.Size = New System.Drawing.Size(196, 20)
+      Me.txtCurSalary.TabIndex = 31
       '
-      'TextBox8
+      'txtPosition
       '
-      Me.TextBox8.Location = New System.Drawing.Point(101, 288)
-      Me.TextBox8.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox8.Name = "TextBox8"
-      Me.TextBox8.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox8.TabIndex = 30
+      Me.txtPosition.Location = New System.Drawing.Point(101, 288)
+      Me.txtPosition.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtPosition.Name = "txtPosition"
+      Me.txtPosition.Size = New System.Drawing.Size(196, 20)
+      Me.txtPosition.TabIndex = 30
       '
-      'TextBox9
+      'txtNIN
       '
-      Me.TextBox9.Location = New System.Drawing.Point(101, 265)
-      Me.TextBox9.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox9.Name = "TextBox9"
-      Me.TextBox9.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox9.TabIndex = 29
+      Me.txtNIN.Location = New System.Drawing.Point(101, 265)
+      Me.txtNIN.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtNIN.Name = "txtNIN"
+      Me.txtNIN.Size = New System.Drawing.Size(196, 20)
+      Me.txtNIN.TabIndex = 29
       '
-      'TextBox10
+      'txtGender
       '
-      Me.TextBox10.Location = New System.Drawing.Point(101, 242)
-      Me.TextBox10.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox10.Name = "TextBox10"
-      Me.TextBox10.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox10.TabIndex = 28
+      Me.txtGender.Location = New System.Drawing.Point(101, 242)
+      Me.txtGender.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtGender.Name = "txtGender"
+      Me.txtGender.Size = New System.Drawing.Size(196, 20)
+      Me.txtGender.TabIndex = 28
       '
-      'TextBox11
+      'txtPhone
       '
-      Me.TextBox11.Location = New System.Drawing.Point(101, 196)
-      Me.TextBox11.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox11.Name = "TextBox11"
-      Me.TextBox11.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox11.TabIndex = 27
+      Me.txtPhone.Location = New System.Drawing.Point(101, 196)
+      Me.txtPhone.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtPhone.Name = "txtPhone"
+      Me.txtPhone.Size = New System.Drawing.Size(196, 20)
+      Me.txtPhone.TabIndex = 27
       '
-      'TextBox12
+      'txtZip
       '
-      Me.TextBox12.Location = New System.Drawing.Point(101, 173)
-      Me.TextBox12.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox12.Name = "TextBox12"
-      Me.TextBox12.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox12.TabIndex = 26
+      Me.txtZip.Location = New System.Drawing.Point(101, 173)
+      Me.txtZip.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtZip.Name = "txtZip"
+      Me.txtZip.Size = New System.Drawing.Size(196, 20)
+      Me.txtZip.TabIndex = 26
       '
-      'TextBox13
+      'txtPayType
       '
-      Me.TextBox13.Location = New System.Drawing.Point(101, 408)
-      Me.TextBox13.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox13.Name = "TextBox13"
-      Me.TextBox13.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox13.TabIndex = 35
+      Me.txtPayType.Location = New System.Drawing.Point(101, 408)
+      Me.txtPayType.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtPayType.Name = "txtPayType"
+      Me.txtPayType.Size = New System.Drawing.Size(196, 20)
+      Me.txtPayType.TabIndex = 35
       '
-      'TextBox14
+      'txtPositionType
       '
-      Me.TextBox14.Location = New System.Drawing.Point(101, 383)
-      Me.TextBox14.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox14.Name = "TextBox14"
-      Me.TextBox14.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox14.TabIndex = 34
+      Me.txtPositionType.Location = New System.Drawing.Point(101, 383)
+      Me.txtPositionType.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtPositionType.Name = "txtPositionType"
+      Me.txtPositionType.Size = New System.Drawing.Size(196, 20)
+      Me.txtPositionType.TabIndex = 34
       '
-      'TextBox15
+      'txtHrsPerWk
       '
-      Me.TextBox15.Location = New System.Drawing.Point(101, 360)
-      Me.TextBox15.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox15.Name = "TextBox15"
-      Me.TextBox15.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox15.TabIndex = 33
+      Me.txtHrsPerWk.Location = New System.Drawing.Point(101, 360)
+      Me.txtHrsPerWk.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtHrsPerWk.Name = "txtHrsPerWk"
+      Me.txtHrsPerWk.Size = New System.Drawing.Size(196, 20)
+      Me.txtHrsPerWk.TabIndex = 33
       '
-      'TextBox16
+      'txtSalaryScale
       '
-      Me.TextBox16.Location = New System.Drawing.Point(101, 335)
-      Me.TextBox16.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox16.Name = "TextBox16"
-      Me.TextBox16.Size = New System.Drawing.Size(196, 20)
-      Me.TextBox16.TabIndex = 32
+      Me.txtSalaryScale.Location = New System.Drawing.Point(101, 335)
+      Me.txtSalaryScale.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtSalaryScale.Name = "txtSalaryScale"
+      Me.txtSalaryScale.Size = New System.Drawing.Size(196, 20)
+      Me.txtSalaryScale.TabIndex = 32
       '
-      'TextBox17
+      'txtOrgName
       '
-      Me.TextBox17.Location = New System.Drawing.Point(483, 223)
-      Me.TextBox17.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox17.Name = "TextBox17"
-      Me.TextBox17.Size = New System.Drawing.Size(204, 20)
-      Me.TextBox17.TabIndex = 39
+      Me.txtOrgName.Location = New System.Drawing.Point(483, 223)
+      Me.txtOrgName.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtOrgName.Name = "txtOrgName"
+      Me.txtOrgName.Size = New System.Drawing.Size(204, 20)
+      Me.txtOrgName.TabIndex = 39
       '
-      'TextBox18
+      'txtQualInst
       '
-      Me.TextBox18.Location = New System.Drawing.Point(483, 84)
-      Me.TextBox18.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox18.Name = "TextBox18"
-      Me.TextBox18.Size = New System.Drawing.Size(204, 20)
-      Me.TextBox18.TabIndex = 38
+      Me.txtQualInst.Location = New System.Drawing.Point(483, 84)
+      Me.txtQualInst.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtQualInst.Name = "txtQualInst"
+      Me.txtQualInst.Size = New System.Drawing.Size(204, 20)
+      Me.txtQualInst.TabIndex = 38
       '
-      'TextBox19
+      'txtQualType
       '
-      Me.TextBox19.Location = New System.Drawing.Point(483, 60)
-      Me.TextBox19.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox19.Name = "TextBox19"
-      Me.TextBox19.Size = New System.Drawing.Size(204, 20)
-      Me.TextBox19.TabIndex = 37
+      Me.txtQualType.Location = New System.Drawing.Point(483, 60)
+      Me.txtQualType.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtQualType.Name = "txtQualType"
+      Me.txtQualType.Size = New System.Drawing.Size(204, 20)
+      Me.txtQualType.TabIndex = 37
       '
       'Label21
       '
@@ -508,178 +508,180 @@ Partial Class FormStaffInfo
       Me.Label25.TabIndex = 40
       Me.Label25.Text = "Start Date:"
       '
-      'TextBox24
+      'txtValForSearch
       '
-      Me.TextBox24.Location = New System.Drawing.Point(483, 433)
-      Me.TextBox24.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox24.Name = "TextBox24"
-      Me.TextBox24.Size = New System.Drawing.Size(138, 20)
-      Me.TextBox24.TabIndex = 46
+      Me.txtValForSearch.Location = New System.Drawing.Point(483, 433)
+      Me.txtValForSearch.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtValForSearch.Name = "txtValForSearch"
+      Me.txtValForSearch.Size = New System.Drawing.Size(138, 20)
+      Me.txtValForSearch.TabIndex = 46
       '
-      'TextBox25
+      'txtWorkPosition
       '
-      Me.TextBox25.Location = New System.Drawing.Point(483, 247)
-      Me.TextBox25.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox25.Name = "TextBox25"
-      Me.TextBox25.Size = New System.Drawing.Size(204, 20)
-      Me.TextBox25.TabIndex = 45
+      Me.txtWorkPosition.Location = New System.Drawing.Point(483, 247)
+      Me.txtWorkPosition.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtWorkPosition.Name = "txtWorkPosition"
+      Me.txtWorkPosition.Size = New System.Drawing.Size(204, 20)
+      Me.txtWorkPosition.TabIndex = 45
       '
-      'Button5
+      'btnNewEmpl
       '
-      Me.Button5.Location = New System.Drawing.Point(31, 482)
-      Me.Button5.Name = "Button5"
-      Me.Button5.Size = New System.Drawing.Size(78, 27)
-      Me.Button5.TabIndex = 58
-      Me.Button5.Text = "New"
-      Me.Button5.UseVisualStyleBackColor = True
+      Me.btnNewEmpl.Location = New System.Drawing.Point(31, 482)
+      Me.btnNewEmpl.Name = "btnNewEmpl"
+      Me.btnNewEmpl.Size = New System.Drawing.Size(78, 27)
+      Me.btnNewEmpl.TabIndex = 58
+      Me.btnNewEmpl.Text = "New"
+      Me.btnNewEmpl.UseVisualStyleBackColor = True
       '
-      'Button6
+      'btnSaveEmpl
       '
-      Me.Button6.Location = New System.Drawing.Point(115, 482)
-      Me.Button6.Name = "Button6"
-      Me.Button6.Size = New System.Drawing.Size(78, 27)
-      Me.Button6.TabIndex = 59
-      Me.Button6.Text = "Save"
-      Me.Button6.UseVisualStyleBackColor = True
+      Me.btnSaveEmpl.Location = New System.Drawing.Point(115, 482)
+      Me.btnSaveEmpl.Name = "btnSaveEmpl"
+      Me.btnSaveEmpl.Size = New System.Drawing.Size(78, 27)
+      Me.btnSaveEmpl.TabIndex = 59
+      Me.btnSaveEmpl.Text = "Save"
+      Me.btnSaveEmpl.UseVisualStyleBackColor = True
       '
-      'Button7
+      'btnDeleteEmpl
       '
-      Me.Button7.Location = New System.Drawing.Point(199, 482)
-      Me.Button7.Name = "Button7"
-      Me.Button7.Size = New System.Drawing.Size(78, 27)
-      Me.Button7.TabIndex = 60
-      Me.Button7.Text = "Delete"
-      Me.Button7.UseVisualStyleBackColor = True
+      Me.btnDeleteEmpl.Location = New System.Drawing.Point(199, 482)
+      Me.btnDeleteEmpl.Name = "btnDeleteEmpl"
+      Me.btnDeleteEmpl.Size = New System.Drawing.Size(78, 27)
+      Me.btnDeleteEmpl.TabIndex = 60
+      Me.btnDeleteEmpl.Text = "Delete"
+      Me.btnDeleteEmpl.UseVisualStyleBackColor = True
       '
-      'DateTimePicker1
+      'DTPickQualDate
       '
-      Me.DateTimePicker1.Location = New System.Drawing.Point(483, 35)
-      Me.DateTimePicker1.Name = "DateTimePicker1"
-      Me.DateTimePicker1.Size = New System.Drawing.Size(204, 20)
-      Me.DateTimePicker1.TabIndex = 61
+      Me.DTPickQualDate.Location = New System.Drawing.Point(483, 35)
+      Me.DTPickQualDate.Name = "DTPickQualDate"
+      Me.DTPickQualDate.Size = New System.Drawing.Size(204, 20)
+      Me.DTPickQualDate.TabIndex = 61
       '
-      'Button10
+      'btnPreviousQual
       '
-      Me.Button10.Location = New System.Drawing.Point(449, 108)
-      Me.Button10.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button10.Name = "Button10"
-      Me.Button10.Size = New System.Drawing.Size(55, 30)
-      Me.Button10.TabIndex = 64
-      Me.Button10.Text = "<"
-      Me.Button10.UseVisualStyleBackColor = True
+      Me.btnPreviousQual.Location = New System.Drawing.Point(449, 108)
+      Me.btnPreviousQual.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnPreviousQual.Name = "btnPreviousQual"
+      Me.btnPreviousQual.Size = New System.Drawing.Size(55, 30)
+      Me.btnPreviousQual.TabIndex = 64
+      Me.btnPreviousQual.Text = "<"
+      Me.btnPreviousQual.UseVisualStyleBackColor = True
       '
-      'Button11
+      'btnToBeginningQual
       '
-      Me.Button11.Location = New System.Drawing.Point(387, 108)
-      Me.Button11.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button11.Name = "Button11"
-      Me.Button11.Size = New System.Drawing.Size(58, 30)
-      Me.Button11.TabIndex = 63
-      Me.Button11.Text = "|<"
-      Me.Button11.UseVisualStyleBackColor = True
+      Me.btnToBeginningQual.Location = New System.Drawing.Point(387, 108)
+      Me.btnToBeginningQual.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnToBeginningQual.Name = "btnToBeginningQual"
+      Me.btnToBeginningQual.Size = New System.Drawing.Size(58, 30)
+      Me.btnToBeginningQual.TabIndex = 63
+      Me.btnToBeginningQual.Text = "|<"
+      Me.btnToBeginningQual.UseVisualStyleBackColor = True
       '
-      'TextBox26
+      'txtQualNoDisplay
       '
-      Me.TextBox26.Location = New System.Drawing.Point(508, 114)
-      Me.TextBox26.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox26.Name = "TextBox26"
-      Me.TextBox26.Size = New System.Drawing.Size(61, 20)
-      Me.TextBox26.TabIndex = 62
+      Me.txtQualNoDisplay.Location = New System.Drawing.Point(508, 114)
+      Me.txtQualNoDisplay.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtQualNoDisplay.Name = "txtQualNoDisplay"
+      Me.txtQualNoDisplay.ReadOnly = True
+      Me.txtQualNoDisplay.Size = New System.Drawing.Size(61, 20)
+      Me.txtQualNoDisplay.TabIndex = 62
       '
-      'Button8
+      'btnNextQual
       '
-      Me.Button8.Location = New System.Drawing.Point(573, 108)
-      Me.Button8.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button8.Name = "Button8"
-      Me.Button8.Size = New System.Drawing.Size(55, 30)
-      Me.Button8.TabIndex = 65
-      Me.Button8.Text = ">"
-      Me.Button8.UseVisualStyleBackColor = True
+      Me.btnNextQual.Location = New System.Drawing.Point(573, 108)
+      Me.btnNextQual.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnNextQual.Name = "btnNextQual"
+      Me.btnNextQual.Size = New System.Drawing.Size(55, 30)
+      Me.btnNextQual.TabIndex = 65
+      Me.btnNextQual.Text = ">"
+      Me.btnNextQual.UseVisualStyleBackColor = True
       '
-      'Button9
+      'btnToEndQual
       '
-      Me.Button9.Location = New System.Drawing.Point(632, 108)
-      Me.Button9.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button9.Name = "Button9"
-      Me.Button9.Size = New System.Drawing.Size(55, 30)
-      Me.Button9.TabIndex = 66
-      Me.Button9.Text = ">|"
-      Me.Button9.UseVisualStyleBackColor = True
+      Me.btnToEndQual.Location = New System.Drawing.Point(632, 108)
+      Me.btnToEndQual.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnToEndQual.Name = "btnToEndQual"
+      Me.btnToEndQual.Size = New System.Drawing.Size(55, 30)
+      Me.btnToEndQual.TabIndex = 66
+      Me.btnToEndQual.Text = ">|"
+      Me.btnToEndQual.UseVisualStyleBackColor = True
       '
-      'Button1
+      'btnToEndEmpl
       '
-      Me.Button1.Location = New System.Drawing.Point(242, 438)
-      Me.Button1.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button1.Name = "Button1"
-      Me.Button1.Size = New System.Drawing.Size(55, 30)
-      Me.Button1.TabIndex = 71
-      Me.Button1.Text = ">|"
-      Me.Button1.UseVisualStyleBackColor = True
+      Me.btnToEndEmpl.Location = New System.Drawing.Point(242, 438)
+      Me.btnToEndEmpl.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnToEndEmpl.Name = "btnToEndEmpl"
+      Me.btnToEndEmpl.Size = New System.Drawing.Size(55, 30)
+      Me.btnToEndEmpl.TabIndex = 71
+      Me.btnToEndEmpl.Text = ">|"
+      Me.btnToEndEmpl.UseVisualStyleBackColor = True
       '
-      'Button2
+      'btnNextEmpl
       '
-      Me.Button2.Location = New System.Drawing.Point(183, 438)
-      Me.Button2.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button2.Name = "Button2"
-      Me.Button2.Size = New System.Drawing.Size(55, 30)
-      Me.Button2.TabIndex = 70
-      Me.Button2.Text = ">"
-      Me.Button2.UseVisualStyleBackColor = True
+      Me.btnNextEmpl.Location = New System.Drawing.Point(183, 438)
+      Me.btnNextEmpl.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnNextEmpl.Name = "btnNextEmpl"
+      Me.btnNextEmpl.Size = New System.Drawing.Size(55, 30)
+      Me.btnNextEmpl.TabIndex = 70
+      Me.btnNextEmpl.Text = ">"
+      Me.btnNextEmpl.UseVisualStyleBackColor = True
       '
-      'Button3
+      'btnPreviousEmpl
       '
-      Me.Button3.Location = New System.Drawing.Point(75, 438)
-      Me.Button3.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button3.Name = "Button3"
-      Me.Button3.Size = New System.Drawing.Size(55, 30)
-      Me.Button3.TabIndex = 69
-      Me.Button3.Text = "<"
-      Me.Button3.UseVisualStyleBackColor = True
+      Me.btnPreviousEmpl.Location = New System.Drawing.Point(75, 438)
+      Me.btnPreviousEmpl.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnPreviousEmpl.Name = "btnPreviousEmpl"
+      Me.btnPreviousEmpl.Size = New System.Drawing.Size(55, 30)
+      Me.btnPreviousEmpl.TabIndex = 69
+      Me.btnPreviousEmpl.Text = "<"
+      Me.btnPreviousEmpl.UseVisualStyleBackColor = True
       '
-      'Button4
+      'btnToBeginningEmpl
       '
-      Me.Button4.Location = New System.Drawing.Point(13, 438)
-      Me.Button4.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button4.Name = "Button4"
-      Me.Button4.Size = New System.Drawing.Size(58, 30)
-      Me.Button4.TabIndex = 68
-      Me.Button4.Text = "|<"
-      Me.Button4.UseVisualStyleBackColor = True
+      Me.btnToBeginningEmpl.Location = New System.Drawing.Point(13, 438)
+      Me.btnToBeginningEmpl.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnToBeginningEmpl.Name = "btnToBeginningEmpl"
+      Me.btnToBeginningEmpl.Size = New System.Drawing.Size(58, 30)
+      Me.btnToBeginningEmpl.TabIndex = 68
+      Me.btnToBeginningEmpl.Text = "|<"
+      Me.btnToBeginningEmpl.UseVisualStyleBackColor = True
       '
-      'TextBox20
+      'txtEmplIDDisplay
       '
-      Me.TextBox20.Location = New System.Drawing.Point(135, 444)
-      Me.TextBox20.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox20.Name = "TextBox20"
-      Me.TextBox20.Size = New System.Drawing.Size(44, 20)
-      Me.TextBox20.TabIndex = 67
+      Me.txtEmplIDDisplay.Location = New System.Drawing.Point(135, 444)
+      Me.txtEmplIDDisplay.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtEmplIDDisplay.Name = "txtEmplIDDisplay"
+      Me.txtEmplIDDisplay.ReadOnly = True
+      Me.txtEmplIDDisplay.Size = New System.Drawing.Size(44, 20)
+      Me.txtEmplIDDisplay.TabIndex = 67
       '
-      'Button12
+      'btnDeleteQual
       '
-      Me.Button12.Location = New System.Drawing.Point(591, 143)
-      Me.Button12.Name = "Button12"
-      Me.Button12.Size = New System.Drawing.Size(78, 27)
-      Me.Button12.TabIndex = 74
-      Me.Button12.Text = "Delete"
-      Me.Button12.UseVisualStyleBackColor = True
+      Me.btnDeleteQual.Location = New System.Drawing.Point(591, 143)
+      Me.btnDeleteQual.Name = "btnDeleteQual"
+      Me.btnDeleteQual.Size = New System.Drawing.Size(78, 27)
+      Me.btnDeleteQual.TabIndex = 74
+      Me.btnDeleteQual.Text = "Delete"
+      Me.btnDeleteQual.UseVisualStyleBackColor = True
       '
-      'Button13
+      'btnSaveQual
       '
-      Me.Button13.Location = New System.Drawing.Point(507, 143)
-      Me.Button13.Name = "Button13"
-      Me.Button13.Size = New System.Drawing.Size(78, 27)
-      Me.Button13.TabIndex = 73
-      Me.Button13.Text = "Save"
-      Me.Button13.UseVisualStyleBackColor = True
+      Me.btnSaveQual.Location = New System.Drawing.Point(507, 143)
+      Me.btnSaveQual.Name = "btnSaveQual"
+      Me.btnSaveQual.Size = New System.Drawing.Size(78, 27)
+      Me.btnSaveQual.TabIndex = 73
+      Me.btnSaveQual.Text = "Save"
+      Me.btnSaveQual.UseVisualStyleBackColor = True
       '
-      'Button14
+      'btnNewQual
       '
-      Me.Button14.Location = New System.Drawing.Point(423, 143)
-      Me.Button14.Name = "Button14"
-      Me.Button14.Size = New System.Drawing.Size(78, 27)
-      Me.Button14.TabIndex = 72
-      Me.Button14.Text = "New"
-      Me.Button14.UseVisualStyleBackColor = True
+      Me.btnNewQual.Location = New System.Drawing.Point(423, 143)
+      Me.btnNewQual.Name = "btnNewQual"
+      Me.btnNewQual.Size = New System.Drawing.Size(78, 27)
+      Me.btnNewQual.TabIndex = 72
+      Me.btnNewQual.Text = "New"
+      Me.btnNewQual.UseVisualStyleBackColor = True
       '
       'Label26
       '
@@ -691,19 +693,19 @@ Partial Class FormStaffInfo
       Me.Label26.TabIndex = 75
       Me.Label26.Text = "Work Experience"
       '
-      'DateTimePicker2
+      'DTPickStartDate
       '
-      Me.DateTimePicker2.Location = New System.Drawing.Point(483, 272)
-      Me.DateTimePicker2.Name = "DateTimePicker2"
-      Me.DateTimePicker2.Size = New System.Drawing.Size(204, 20)
-      Me.DateTimePicker2.TabIndex = 76
+      Me.DTPickStartDate.Location = New System.Drawing.Point(483, 272)
+      Me.DTPickStartDate.Name = "DTPickStartDate"
+      Me.DTPickStartDate.Size = New System.Drawing.Size(204, 20)
+      Me.DTPickStartDate.TabIndex = 76
       '
-      'DateTimePicker3
+      'DTPickEndDate
       '
-      Me.DateTimePicker3.Location = New System.Drawing.Point(483, 298)
-      Me.DateTimePicker3.Name = "DateTimePicker3"
-      Me.DateTimePicker3.Size = New System.Drawing.Size(204, 20)
-      Me.DateTimePicker3.TabIndex = 77
+      Me.DTPickEndDate.Location = New System.Drawing.Point(483, 298)
+      Me.DTPickEndDate.Name = "DTPickEndDate"
+      Me.DTPickEndDate.Size = New System.Drawing.Size(204, 20)
+      Me.DTPickEndDate.TabIndex = 77
       '
       'Label27
       '
@@ -715,89 +717,90 @@ Partial Class FormStaffInfo
       Me.Label27.TabIndex = 78
       Me.Label27.Text = "Finish Date:"
       '
-      'Button15
+      'btnDeleteWork
       '
-      Me.Button15.Location = New System.Drawing.Point(591, 358)
-      Me.Button15.Name = "Button15"
-      Me.Button15.Size = New System.Drawing.Size(78, 27)
-      Me.Button15.TabIndex = 86
-      Me.Button15.Text = "Delete"
-      Me.Button15.UseVisualStyleBackColor = True
+      Me.btnDeleteWork.Location = New System.Drawing.Point(591, 358)
+      Me.btnDeleteWork.Name = "btnDeleteWork"
+      Me.btnDeleteWork.Size = New System.Drawing.Size(78, 27)
+      Me.btnDeleteWork.TabIndex = 86
+      Me.btnDeleteWork.Text = "Delete"
+      Me.btnDeleteWork.UseVisualStyleBackColor = True
       '
-      'Button16
+      'btnSaveWork
       '
-      Me.Button16.Location = New System.Drawing.Point(507, 358)
-      Me.Button16.Name = "Button16"
-      Me.Button16.Size = New System.Drawing.Size(78, 27)
-      Me.Button16.TabIndex = 85
-      Me.Button16.Text = "Save"
-      Me.Button16.UseVisualStyleBackColor = True
+      Me.btnSaveWork.Location = New System.Drawing.Point(507, 358)
+      Me.btnSaveWork.Name = "btnSaveWork"
+      Me.btnSaveWork.Size = New System.Drawing.Size(78, 27)
+      Me.btnSaveWork.TabIndex = 85
+      Me.btnSaveWork.Text = "Save"
+      Me.btnSaveWork.UseVisualStyleBackColor = True
       '
-      'Button17
+      'btnNewWork
       '
-      Me.Button17.Location = New System.Drawing.Point(423, 358)
-      Me.Button17.Name = "Button17"
-      Me.Button17.Size = New System.Drawing.Size(78, 27)
-      Me.Button17.TabIndex = 84
-      Me.Button17.Text = "New"
-      Me.Button17.UseVisualStyleBackColor = True
+      Me.btnNewWork.Location = New System.Drawing.Point(423, 358)
+      Me.btnNewWork.Name = "btnNewWork"
+      Me.btnNewWork.Size = New System.Drawing.Size(78, 27)
+      Me.btnNewWork.TabIndex = 84
+      Me.btnNewWork.Text = "New"
+      Me.btnNewWork.UseVisualStyleBackColor = True
       '
-      'Button18
+      'btnToEndWork
       '
-      Me.Button18.Location = New System.Drawing.Point(632, 323)
-      Me.Button18.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button18.Name = "Button18"
-      Me.Button18.Size = New System.Drawing.Size(55, 30)
-      Me.Button18.TabIndex = 83
-      Me.Button18.Text = ">|"
-      Me.Button18.UseVisualStyleBackColor = True
+      Me.btnToEndWork.Location = New System.Drawing.Point(632, 323)
+      Me.btnToEndWork.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnToEndWork.Name = "btnToEndWork"
+      Me.btnToEndWork.Size = New System.Drawing.Size(55, 30)
+      Me.btnToEndWork.TabIndex = 83
+      Me.btnToEndWork.Text = ">|"
+      Me.btnToEndWork.UseVisualStyleBackColor = True
       '
-      'Button19
+      'btnNextWork
       '
-      Me.Button19.Location = New System.Drawing.Point(573, 323)
-      Me.Button19.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button19.Name = "Button19"
-      Me.Button19.Size = New System.Drawing.Size(55, 30)
-      Me.Button19.TabIndex = 82
-      Me.Button19.Text = ">"
-      Me.Button19.UseVisualStyleBackColor = True
+      Me.btnNextWork.Location = New System.Drawing.Point(573, 323)
+      Me.btnNextWork.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnNextWork.Name = "btnNextWork"
+      Me.btnNextWork.Size = New System.Drawing.Size(55, 30)
+      Me.btnNextWork.TabIndex = 82
+      Me.btnNextWork.Text = ">"
+      Me.btnNextWork.UseVisualStyleBackColor = True
       '
-      'Button20
+      'btnPreviousWork
       '
-      Me.Button20.Location = New System.Drawing.Point(449, 323)
-      Me.Button20.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button20.Name = "Button20"
-      Me.Button20.Size = New System.Drawing.Size(55, 30)
-      Me.Button20.TabIndex = 81
-      Me.Button20.Text = "<"
-      Me.Button20.UseVisualStyleBackColor = True
+      Me.btnPreviousWork.Location = New System.Drawing.Point(449, 323)
+      Me.btnPreviousWork.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnPreviousWork.Name = "btnPreviousWork"
+      Me.btnPreviousWork.Size = New System.Drawing.Size(55, 30)
+      Me.btnPreviousWork.TabIndex = 81
+      Me.btnPreviousWork.Text = "<"
+      Me.btnPreviousWork.UseVisualStyleBackColor = True
       '
-      'Button21
+      'btnToBeginningWork
       '
-      Me.Button21.Location = New System.Drawing.Point(387, 323)
-      Me.Button21.Margin = New System.Windows.Forms.Padding(2)
-      Me.Button21.Name = "Button21"
-      Me.Button21.Size = New System.Drawing.Size(58, 30)
-      Me.Button21.TabIndex = 80
-      Me.Button21.Text = "|<"
-      Me.Button21.UseVisualStyleBackColor = True
+      Me.btnToBeginningWork.Location = New System.Drawing.Point(387, 323)
+      Me.btnToBeginningWork.Margin = New System.Windows.Forms.Padding(2)
+      Me.btnToBeginningWork.Name = "btnToBeginningWork"
+      Me.btnToBeginningWork.Size = New System.Drawing.Size(58, 30)
+      Me.btnToBeginningWork.TabIndex = 80
+      Me.btnToBeginningWork.Text = "|<"
+      Me.btnToBeginningWork.UseVisualStyleBackColor = True
       '
-      'TextBox21
+      'txtWorkExDisplay
       '
-      Me.TextBox21.Location = New System.Drawing.Point(508, 329)
-      Me.TextBox21.Margin = New System.Windows.Forms.Padding(2)
-      Me.TextBox21.Name = "TextBox21"
-      Me.TextBox21.Size = New System.Drawing.Size(61, 20)
-      Me.TextBox21.TabIndex = 79
+      Me.txtWorkExDisplay.Location = New System.Drawing.Point(508, 329)
+      Me.txtWorkExDisplay.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtWorkExDisplay.Name = "txtWorkExDisplay"
+      Me.txtWorkExDisplay.ReadOnly = True
+      Me.txtWorkExDisplay.Size = New System.Drawing.Size(61, 20)
+      Me.txtWorkExDisplay.TabIndex = 79
       '
-      'ComboBox2
+      'CBoxFieldSel
       '
-      Me.ComboBox2.FormattingEnabled = True
-      Me.ComboBox2.Items.AddRange(New Object() {"Type", "Org Name"})
-      Me.ComboBox2.Location = New System.Drawing.Point(483, 407)
-      Me.ComboBox2.Name = "ComboBox2"
-      Me.ComboBox2.Size = New System.Drawing.Size(138, 21)
-      Me.ComboBox2.TabIndex = 87
+      Me.CBoxFieldSel.FormattingEnabled = True
+      Me.CBoxFieldSel.Items.AddRange(New Object() {"Type", "Org Name"})
+      Me.CBoxFieldSel.Location = New System.Drawing.Point(483, 407)
+      Me.CBoxFieldSel.Name = "CBoxFieldSel"
+      Me.CBoxFieldSel.Size = New System.Drawing.Size(138, 21)
+      Me.CBoxFieldSel.TabIndex = 87
       '
       'Label28
       '
@@ -819,109 +822,108 @@ Partial Class FormStaffInfo
       Me.Label29.TabIndex = 89
       Me.Label29.Text = "Value"
       '
-      'Button22
+      'btnAll
       '
-      Me.Button22.Location = New System.Drawing.Point(626, 407)
-      Me.Button22.Name = "Button22"
-      Me.Button22.Size = New System.Drawing.Size(61, 21)
-      Me.Button22.TabIndex = 90
-      Me.Button22.Text = "&All"
-      Me.Button22.UseVisualStyleBackColor = True
+      Me.btnAll.Location = New System.Drawing.Point(626, 407)
+      Me.btnAll.Name = "btnAll"
+      Me.btnAll.Size = New System.Drawing.Size(61, 21)
+      Me.btnAll.TabIndex = 90
+      Me.btnAll.Text = "&All"
+      Me.btnAll.UseVisualStyleBackColor = True
       '
-      'Button23
+      'btnSearch
       '
-      Me.Button23.Location = New System.Drawing.Point(626, 433)
-      Me.Button23.Name = "Button23"
-      Me.Button23.Size = New System.Drawing.Size(61, 20)
-      Me.Button23.TabIndex = 91
-      Me.Button23.Text = "&Search"
-      Me.Button23.UseVisualStyleBackColor = True
+      Me.btnSearch.Location = New System.Drawing.Point(626, 433)
+      Me.btnSearch.Name = "btnSearch"
+      Me.btnSearch.Size = New System.Drawing.Size(61, 20)
+      Me.btnSearch.TabIndex = 91
+      Me.btnSearch.Text = "&Search"
+      Me.btnSearch.UseVisualStyleBackColor = True
       '
-      'Button24
+      'btnExit
       '
-      Me.Button24.Location = New System.Drawing.Point(321, 521)
-      Me.Button24.Name = "Button24"
-      Me.Button24.Size = New System.Drawing.Size(78, 27)
-      Me.Button24.TabIndex = 92
-      Me.Button24.Text = "&Exit"
-      Me.Button24.UseVisualStyleBackColor = True
+      Me.btnExit.Location = New System.Drawing.Point(321, 521)
+      Me.btnExit.Name = "btnExit"
+      Me.btnExit.Size = New System.Drawing.Size(78, 27)
+      Me.btnExit.TabIndex = 92
+      Me.btnExit.Text = "&Exit"
+      Me.btnExit.UseVisualStyleBackColor = True
       '
-      'DateTimePicker4
+      'DTPickDOB
       '
-      Me.DateTimePicker4.Location = New System.Drawing.Point(101, 219)
-      Me.DateTimePicker4.MaxDate = New Date(2018, 5, 18, 0, 0, 0, 0)
-      Me.DateTimePicker4.Name = "DateTimePicker4"
-      Me.DateTimePicker4.Size = New System.Drawing.Size(196, 20)
-      Me.DateTimePicker4.TabIndex = 93
-      Me.DateTimePicker4.Value = New Date(2018, 5, 8, 0, 0, 0, 0)
+      Me.DTPickDOB.Location = New System.Drawing.Point(101, 219)
+      Me.DTPickDOB.Name = "DTPickDOB"
+      Me.DTPickDOB.Size = New System.Drawing.Size(196, 20)
+      Me.DTPickDOB.TabIndex = 93
+      Me.DTPickDOB.Value = New Date(2018, 5, 8, 0, 0, 0, 0)
       '
       'FormStaffInfo
       '
       Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
       Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
       Me.ClientSize = New System.Drawing.Size(714, 561)
-      Me.Controls.Add(Me.DateTimePicker4)
-      Me.Controls.Add(Me.Button24)
-      Me.Controls.Add(Me.Button23)
-      Me.Controls.Add(Me.Button22)
+      Me.Controls.Add(Me.DTPickDOB)
+      Me.Controls.Add(Me.btnExit)
+      Me.Controls.Add(Me.btnSearch)
+      Me.Controls.Add(Me.btnAll)
       Me.Controls.Add(Me.Label29)
       Me.Controls.Add(Me.Label28)
-      Me.Controls.Add(Me.ComboBox2)
-      Me.Controls.Add(Me.Button15)
-      Me.Controls.Add(Me.Button16)
-      Me.Controls.Add(Me.Button17)
-      Me.Controls.Add(Me.Button18)
-      Me.Controls.Add(Me.Button19)
-      Me.Controls.Add(Me.Button20)
-      Me.Controls.Add(Me.Button21)
-      Me.Controls.Add(Me.TextBox21)
+      Me.Controls.Add(Me.CBoxFieldSel)
+      Me.Controls.Add(Me.btnDeleteWork)
+      Me.Controls.Add(Me.btnSaveWork)
+      Me.Controls.Add(Me.btnNewWork)
+      Me.Controls.Add(Me.btnToEndWork)
+      Me.Controls.Add(Me.btnNextWork)
+      Me.Controls.Add(Me.btnPreviousWork)
+      Me.Controls.Add(Me.btnToBeginningWork)
+      Me.Controls.Add(Me.txtWorkExDisplay)
       Me.Controls.Add(Me.Label27)
-      Me.Controls.Add(Me.DateTimePicker3)
-      Me.Controls.Add(Me.DateTimePicker2)
+      Me.Controls.Add(Me.DTPickEndDate)
+      Me.Controls.Add(Me.DTPickStartDate)
       Me.Controls.Add(Me.Label26)
-      Me.Controls.Add(Me.Button12)
-      Me.Controls.Add(Me.Button13)
-      Me.Controls.Add(Me.Button14)
-      Me.Controls.Add(Me.Button1)
-      Me.Controls.Add(Me.Button2)
-      Me.Controls.Add(Me.Button3)
-      Me.Controls.Add(Me.Button4)
-      Me.Controls.Add(Me.TextBox20)
-      Me.Controls.Add(Me.Button9)
-      Me.Controls.Add(Me.Button8)
-      Me.Controls.Add(Me.Button10)
-      Me.Controls.Add(Me.Button11)
-      Me.Controls.Add(Me.TextBox26)
-      Me.Controls.Add(Me.DateTimePicker1)
-      Me.Controls.Add(Me.Button7)
-      Me.Controls.Add(Me.Button6)
-      Me.Controls.Add(Me.Button5)
-      Me.Controls.Add(Me.TextBox24)
-      Me.Controls.Add(Me.TextBox25)
+      Me.Controls.Add(Me.btnDeleteQual)
+      Me.Controls.Add(Me.btnSaveQual)
+      Me.Controls.Add(Me.btnNewQual)
+      Me.Controls.Add(Me.btnToEndEmpl)
+      Me.Controls.Add(Me.btnNextEmpl)
+      Me.Controls.Add(Me.btnPreviousEmpl)
+      Me.Controls.Add(Me.btnToBeginningEmpl)
+      Me.Controls.Add(Me.txtEmplIDDisplay)
+      Me.Controls.Add(Me.btnToEndQual)
+      Me.Controls.Add(Me.btnNextQual)
+      Me.Controls.Add(Me.btnPreviousQual)
+      Me.Controls.Add(Me.btnToBeginningQual)
+      Me.Controls.Add(Me.txtQualNoDisplay)
+      Me.Controls.Add(Me.DTPickQualDate)
+      Me.Controls.Add(Me.btnDeleteEmpl)
+      Me.Controls.Add(Me.btnSaveEmpl)
+      Me.Controls.Add(Me.btnNewEmpl)
+      Me.Controls.Add(Me.txtValForSearch)
+      Me.Controls.Add(Me.txtWorkPosition)
       Me.Controls.Add(Me.Label21)
       Me.Controls.Add(Me.Label22)
       Me.Controls.Add(Me.Label23)
       Me.Controls.Add(Me.Label24)
       Me.Controls.Add(Me.Label25)
-      Me.Controls.Add(Me.TextBox17)
-      Me.Controls.Add(Me.TextBox18)
-      Me.Controls.Add(Me.TextBox19)
-      Me.Controls.Add(Me.TextBox13)
-      Me.Controls.Add(Me.TextBox14)
-      Me.Controls.Add(Me.TextBox15)
-      Me.Controls.Add(Me.TextBox16)
-      Me.Controls.Add(Me.TextBox7)
-      Me.Controls.Add(Me.TextBox8)
-      Me.Controls.Add(Me.TextBox9)
-      Me.Controls.Add(Me.TextBox10)
-      Me.Controls.Add(Me.TextBox11)
-      Me.Controls.Add(Me.TextBox12)
-      Me.Controls.Add(Me.TextBox4)
-      Me.Controls.Add(Me.TextBox5)
-      Me.Controls.Add(Me.TextBox6)
-      Me.Controls.Add(Me.TextBox3)
-      Me.Controls.Add(Me.TextBox2)
-      Me.Controls.Add(Me.TextBox1)
+      Me.Controls.Add(Me.txtOrgName)
+      Me.Controls.Add(Me.txtQualInst)
+      Me.Controls.Add(Me.txtQualType)
+      Me.Controls.Add(Me.txtPayType)
+      Me.Controls.Add(Me.txtPositionType)
+      Me.Controls.Add(Me.txtHrsPerWk)
+      Me.Controls.Add(Me.txtSalaryScale)
+      Me.Controls.Add(Me.txtCurSalary)
+      Me.Controls.Add(Me.txtPosition)
+      Me.Controls.Add(Me.txtNIN)
+      Me.Controls.Add(Me.txtGender)
+      Me.Controls.Add(Me.txtPhone)
+      Me.Controls.Add(Me.txtZip)
+      Me.Controls.Add(Me.txtState)
+      Me.Controls.Add(Me.txtCity)
+      Me.Controls.Add(Me.txtStreet)
+      Me.Controls.Add(Me.txtLastName)
+      Me.Controls.Add(Me.txtFirstName)
+      Me.Controls.Add(Me.txtStaffNo)
       Me.Controls.Add(Me.Label20)
       Me.Controls.Add(Me.Label19)
       Me.Controls.Add(Me.Label18)
@@ -970,66 +972,66 @@ Partial Class FormStaffInfo
     Friend WithEvents Label18 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents TextBox19 As TextBox
+    Friend WithEvents txtStaffNo As TextBox
+    Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents txtState As TextBox
+    Friend WithEvents txtCity As TextBox
+    Friend WithEvents txtStreet As TextBox
+    Friend WithEvents txtCurSalary As TextBox
+    Friend WithEvents txtPosition As TextBox
+    Friend WithEvents txtNIN As TextBox
+    Friend WithEvents txtGender As TextBox
+    Friend WithEvents txtPhone As TextBox
+    Friend WithEvents txtZip As TextBox
+    Friend WithEvents txtPayType As TextBox
+    Friend WithEvents txtPositionType As TextBox
+    Friend WithEvents txtHrsPerWk As TextBox
+    Friend WithEvents txtSalaryScale As TextBox
+    Friend WithEvents txtOrgName As TextBox
+    Friend WithEvents txtQualInst As TextBox
+    Friend WithEvents txtQualType As TextBox
    Friend WithEvents Label21 As Label
    Friend WithEvents Label22 As Label
    Friend WithEvents Label23 As Label
    Friend WithEvents Label24 As Label
    Friend WithEvents Label25 As Label
-   Friend WithEvents TextBox24 As TextBox
-   Friend WithEvents TextBox25 As TextBox
-   Friend WithEvents Button5 As Button
-   Friend WithEvents Button6 As Button
-   Friend WithEvents Button7 As Button
-   Friend WithEvents DateTimePicker1 As DateTimePicker
-   Friend WithEvents Button10 As Button
-   Friend WithEvents Button11 As Button
-   Friend WithEvents TextBox26 As TextBox
-   Friend WithEvents Button8 As Button
-   Friend WithEvents Button9 As Button
-   Friend WithEvents Button1 As Button
-   Friend WithEvents Button2 As Button
-   Friend WithEvents Button3 As Button
-   Friend WithEvents Button4 As Button
-   Friend WithEvents TextBox20 As TextBox
-   Friend WithEvents Button12 As Button
-   Friend WithEvents Button13 As Button
-   Friend WithEvents Button14 As Button
+   Friend WithEvents txtValForSearch As TextBox
+   Friend WithEvents txtWorkPosition As TextBox
+   Friend WithEvents btnNewEmpl As Button
+   Friend WithEvents btnSaveEmpl As Button
+   Friend WithEvents btnDeleteEmpl As Button
+   Friend WithEvents DTPickQualDate As DateTimePicker
+   Friend WithEvents btnPreviousQual As Button
+   Friend WithEvents btnToBeginningQual As Button
+   Friend WithEvents txtQualNoDisplay As TextBox
+   Friend WithEvents btnNextQual As Button
+   Friend WithEvents btnToEndQual As Button
+   Friend WithEvents btnToEndEmpl As Button
+   Friend WithEvents btnNextEmpl As Button
+   Friend WithEvents btnPreviousEmpl As Button
+   Friend WithEvents btnToBeginningEmpl As Button
+   Friend WithEvents txtEmplIDDisplay As TextBox
+   Friend WithEvents btnDeleteQual As Button
+   Friend WithEvents btnSaveQual As Button
+   Friend WithEvents btnNewQual As Button
    Friend WithEvents Label26 As Label
-   Friend WithEvents DateTimePicker2 As DateTimePicker
-   Friend WithEvents DateTimePicker3 As DateTimePicker
+   Friend WithEvents DTPickStartDate As DateTimePicker
+   Friend WithEvents DTPickEndDate As DateTimePicker
    Friend WithEvents Label27 As Label
-   Friend WithEvents Button15 As Button
-   Friend WithEvents Button16 As Button
-   Friend WithEvents Button17 As Button
-   Friend WithEvents Button18 As Button
-   Friend WithEvents Button19 As Button
-   Friend WithEvents Button20 As Button
-   Friend WithEvents Button21 As Button
-   Friend WithEvents TextBox21 As TextBox
-   Friend WithEvents ComboBox2 As ComboBox
+   Friend WithEvents btnDeleteWork As Button
+   Friend WithEvents btnSaveWork As Button
+   Friend WithEvents btnNewWork As Button
+   Friend WithEvents btnToEndWork As Button
+   Friend WithEvents btnNextWork As Button
+   Friend WithEvents btnPreviousWork As Button
+   Friend WithEvents btnToBeginningWork As Button
+   Friend WithEvents txtWorkExDisplay As TextBox
+   Friend WithEvents CBoxFieldSel As ComboBox
    Friend WithEvents Label28 As Label
    Friend WithEvents Label29 As Label
-   Friend WithEvents Button22 As Button
-   Friend WithEvents Button23 As Button
-   Friend WithEvents Button24 As Button
-   Friend WithEvents DateTimePicker4 As DateTimePicker
+   Friend WithEvents btnAll As Button
+   Friend WithEvents btnSearch As Button
+   Friend WithEvents btnExit As Button
+   Friend WithEvents DTPickDOB As DateTimePicker
 End Class
