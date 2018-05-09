@@ -60,3 +60,15 @@ E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_
 E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.pdb
 E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.xml
 E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.vbprojResolveAssemblyReference.cache
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe.config
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.exe
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.xml
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.pdb
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.pdb
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.xml
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.vbprojResolveAssemblyReference.cache
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.FormClassLogin.resources
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.FormStaffInfo.resources
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.Resources.resources
+J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.vbproj.GenerateResource.Cache

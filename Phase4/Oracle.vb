@@ -22,7 +22,19 @@
    Friend Shared staffCommand As New System.Data.OracleClient.OracleCommand
    Friend Shared staffCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
 
+   Friend Shared workAdapter As New System.Data.OracleClient.OracleDataAdapter
+   Friend Shared workCommand As New System.Data.OracleClient.OracleCommand
+   Friend Shared workCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
+
+   Friend Shared qualAdapter As New System.Data.OracleClient.OracleDataAdapter
+   Friend Shared qualCommand As New System.Data.OracleClient.OracleCommand
+   Friend Shared qualCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
+
    Friend Shared myTable As New System.Data.DataTable
+
+   Friend Shared UWP_Staff As New System.Data.DataTable("UWP_Staff")
+   Friend Shared UWP_WorkExperience As New System.Data.DataTable("UWP_WorkExperience")
+   Friend Shared UWP_Qualifications As New System.Data.DataTable("UWP_Qualifications")
 
    Public Shared Sub LogInAtRunTime()
       ' For testing 
@@ -35,11 +47,23 @@
       staffCommand.CommandType = CommandType.Text
       staffCommand.CommandText = "Select * from UWP_Staff"
       staffCommand.Connection = OracleConnection
-
       staffAdapter.SelectCommand = staffCommand
       staffCommandBuilder = New System.Data.OracleClient.OracleCommandBuilder(staffAdapter)
+      staffAdapter.Fill(UWP_Staff)
 
-      staffAdapter.Fill(myTable)
+      workCommand.CommandType = CommandType.Text
+      workCommand.CommandText = "Select * from UWP_WorkExperience"
+      workCommand.Connection = OracleConnection
+      workAdapter.SelectCommand = workCommand
+      workCommandBuilder = New System.Data.OracleClient.OracleCommandBuilder(workAdapter)
+      workAdapter.Fill(UWP_WorkExperience)
+
+      qualCommand.CommandType = CommandType.Text
+      qualCommand.CommandText = "Select * from UWP_Qualifications"
+      qualCommand.Connection = OracleConnection
+      qualAdapter.SelectCommand = qualCommand
+      qualCommandBuilder = New System.Data.OracleClient.OracleCommandBuilder(qualAdapter)
+      qualAdapter.Fill(UWP_Qualifications)
    End Sub
 
    Public Shared Sub main()
