@@ -1,6 +1,6 @@
 ﻿'Imports System.Data.SqlClient
 Public Class FormStaffInfo
-   Private staffDataView As New DataView()
+   'Private staffDataView As New DataView()
    Private workDataView As New DataView()
    Private qualDataView As New DataView()
    Private staffBindingSource As New BindingSource
@@ -8,8 +8,8 @@ Public Class FormStaffInfo
    Private workBindingSource As New BindingSource
 
    Private Sub FormStaffInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-      staffDataView.Table = Oracle.UWP_Staff
-      staffBindingSource.DataSource = staffDataView
+      'staffDataView.Table = 
+      staffBindingSource.DataSource = Oracle.UWP_Staff
 
       txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "staffNo")
       txtFirstName.DataBindings.Add("Text", Oracle.UWP_Staff, "fName")
@@ -44,7 +44,7 @@ Public Class FormStaffInfo
       DTPickStartDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "startDate")
       DTPickEndDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "finishDate")
 
-      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
 
@@ -128,22 +128,22 @@ Public Class FormStaffInfo
 
    Private Sub btnNextEmpl_Click(sender As Object, e As EventArgs) Handles btnNextEmpl.Click
       staffBindingSource.MoveNext()
-      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
    End Sub
 
    Private Sub btnPreviousEmpl_Click(sender As Object, e As EventArgs) Handles btnPreviousEmpl.Click
       staffBindingSource.MovePrevious()
-      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
    End Sub
 
    Private Sub btnToEndEmpl_Click(sender As Object, e As EventArgs) Handles btnToEndEmpl.Click
       staffBindingSource.MoveLast()
-      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
    End Sub
 
    Private Sub btnToBeginningEmpl_Click(sender As Object, e As EventArgs) Handles btnToBeginningEmpl.Click
       staffBindingSource.MoveFirst()
-      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
    End Sub
 
    Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
