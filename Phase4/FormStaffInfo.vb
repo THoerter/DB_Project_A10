@@ -45,8 +45,8 @@ Public Class FormStaffInfo
       DTPickEndDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "finishDate")
 
       staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
-      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
-      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
 
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
@@ -236,44 +236,44 @@ Public Class FormStaffInfo
 
    Private Sub btnNextQual_Click(sender As Object, e As EventArgs) Handles btnNextQual.Click
       qualBindingSource.MoveNext()
-      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
    End Sub
 
    Private Sub btnPreviousQual_Click(sender As Object, e As EventArgs) Handles btnPreviousQual.Click
       qualBindingSource.MovePrevious()
-      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
    End Sub
 
    Private Sub btnToEndQual_Click(sender As Object, e As EventArgs) Handles btnToEndQual.Click
       qualBindingSource.MoveLast()
-      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
 
    End Sub
 
    Private Sub btnToBeginningQual_Click(sender As Object, e As EventArgs) Handles btnToBeginningQual.Click
       qualBindingSource.MoveFirst()
-      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
 
    End Sub
 
    Private Sub btnNextWork_Click(sender As Object, e As EventArgs) Handles btnNextWork.Click
       workBindingSource.MoveNext()
-      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnPreviousWork_Click(sender As Object, e As EventArgs) Handles btnPreviousWork.Click
       workBindingSource.MovePrevious()
-      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnToEndWork_Click(sender As Object, e As EventArgs) Handles btnToEndWork.Click
       workBindingSource.MoveLast()
-      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnToBeginningWork_Click(sender As Object, e As EventArgs) Handles btnToBeginningWork.Click
       workBindingSource.MoveFirst()
-      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnSaveEmpl_Click(sender As Object, e As EventArgs) Handles btnSaveEmpl.Click

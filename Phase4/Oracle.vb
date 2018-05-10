@@ -24,16 +24,19 @@
    Friend Shared staffAdapter As New System.Data.OracleClient.OracleDataAdapter
    Friend Shared staffCommand As New System.Data.OracleClient.OracleCommand
    Friend Shared staffCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
+   Friend Shared myTable As New System.Data.DataTable
 
    Friend Shared workAdapter As New System.Data.OracleClient.OracleDataAdapter
    Friend Shared workCommand As New System.Data.OracleClient.OracleCommand
    Friend Shared workCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
+   Friend Shared workTable As New System.Data.DataTable
 
    Friend Shared qualAdapter As New System.Data.OracleClient.OracleDataAdapter
    Friend Shared qualCommand As New System.Data.OracleClient.OracleCommand
    Friend Shared qualCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
+   Friend Shared qualTable As New System.Data.DataTable
 
-   Friend Shared myTable As New System.Data.DataTable
+
 
 
 
