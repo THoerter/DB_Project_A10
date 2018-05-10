@@ -11,7 +11,6 @@ Public Class FormStaffInfo
       staffDataView.Table = Oracle.UWP_Staff
       staffBindingSource.DataSource = staffDataView
 
-
       txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "staffNo")
       txtFirstName.DataBindings.Add("Text", Oracle.UWP_Staff, "fName")
       txtLastName.DataBindings.Add("Text", Oracle.UWP_Staff, "lName")
@@ -23,7 +22,7 @@ Public Class FormStaffInfo
       DTPickDOB.DataBindings.Add("Text", Oracle.UWP_Staff, "DOB")
       txtGender.DataBindings.Add("Text", Oracle.UWP_Staff, "gender")
       txtNIN.DataBindings.Add("Text", Oracle.UWP_Staff, "NIN")
-      txtPosition.DataBindings.Add("Text", Oracle.UWP_Staff, "position")
+      txtBoxPosition.DataBindings.Add("Text", Oracle.UWP_Staff, "position")
       txtCurSalary.DataBindings.Add("Text", Oracle.UWP_Staff, "curSalary")
       txtSalaryScale.DataBindings.Add("Text", Oracle.UWP_Staff, "salaryScale")
       txtHrsPerWk.DataBindings.Add("Text", Oracle.UWP_Staff, "hrsPerWk")
@@ -41,45 +40,77 @@ Public Class FormStaffInfo
       workBindingSource.DataSource = workDataView
 
       txtOrgName.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "orgName")
-      txtPosition.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "position")
+      txtWorkPosition.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "position")
       DTPickStartDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "startDate")
       DTPickEndDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "finishDate")
 
       staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
-      'qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
-      'workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+
+      txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
+      txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
+      txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+
+      DTPickDOB.Format = DateTimePickerFormat.Custom
+      DTPickDOB.CustomFormat = "M/dd/yyyy"
+
+      DTPickEndDate.Format = DateTimePickerFormat.Custom
+      DTPickEndDate.CustomFormat = "M/dd/yyyy"
+
+      DTPickQualDate.Format = DateTimePickerFormat.Custom
+      DTPickQualDate.CustomFormat = "M/dd/yyyy"
+
+      DTPickStartDate.Format = DateTimePickerFormat.Custom
+      DTPickStartDate.CustomFormat = "M/dd/yyyy"
 
    End Sub
-   Public Sub LoadInfo()
+   'Public Sub LoadInfo()
 
-   End Sub
+   'End Sub
    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
       Dim field As String = CBoxFieldSel.Text
       Dim value As String = txtValForSearch.Text
 
       If field = "Type" Then
-         Oracle.staffCommand.CommandText =
+         Oracle.qualCommand.CommandText =
             "Select * " &
             "From UWP_Qualifications " &
             "Where type = '" & value & "'"
+         Try
+            Oracle.myTable.Clear()
+            Oracle.qualAdapter.Fill(Oracle.myTable)
+         Catch ex As Exception
+            MessageBox.Show(ex.Message)
+         End Try
+         MessageBox.Show(Oracle.qualCommand.CommandText)
+
       ElseIf field = "Org Name" Then
-         Oracle.staffCommand.CommandText =
+         Oracle.workCommand.CommandText =
             "Select * " &
             "From UWP_WorkExperience " &
             "Where orgName = '" & value & "'"
+         Try
+            Oracle.myTable.Clear()
+            Oracle.workAdapter.Fill(Oracle.myTable)
+         Catch ex As Exception
+            MessageBox.Show(ex.Message)
+         End Try
+         MessageBox.Show(Oracle.workCommand.CommandText)
+
       Else
          Oracle.staffCommand.CommandText = "You haven't selected a field or a value!"
       End If
       'Check CommandText
-      MessageBox.Show(Oracle.staffCommand.CommandText)
+      'MessageBox.Show(Oracle.staffCommand.CommandText)
 
       'Catch Exception
-      Try
-         Oracle.myTable.Clear()
-         Oracle.staffAdapter.Fill(Oracle.myTable)
-      Catch ex As Exception
-         MessageBox.Show(ex.Message)
-      End Try
+      'Try
+      '      Oracle.myTable.Clear()
+      'Oracle.workAdapter.Fill(Oracle.myTable)
+      'Catch ex As Exception
+      '      MessageBox.Show(ex.Message)
+      'End Try
    End Sub
 
    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -205,36 +236,44 @@ Public Class FormStaffInfo
 
    Private Sub btnNextQual_Click(sender As Object, e As EventArgs) Handles btnNextQual.Click
       qualBindingSource.MoveNext()
-      'qualDataView.RowFilter = "staffNo = '" & txtQualNoDisplay.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
    End Sub
 
    Private Sub btnPreviousQual_Click(sender As Object, e As EventArgs) Handles btnPreviousQual.Click
       qualBindingSource.MovePrevious()
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
    End Sub
 
    Private Sub btnToEndQual_Click(sender As Object, e As EventArgs) Handles btnToEndQual.Click
       qualBindingSource.MoveLast()
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+
    End Sub
 
    Private Sub btnToBeginningQual_Click(sender As Object, e As EventArgs) Handles btnToBeginningQual.Click
       qualBindingSource.MoveFirst()
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "type = '" & txtQualType.Text & "'"
+
    End Sub
 
    Private Sub btnNextWork_Click(sender As Object, e As EventArgs) Handles btnNextWork.Click
       workBindingSource.MoveNext()
-      'workDataView.RowFilter = "staffNo = '" & txtQualNoDisplay.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnPreviousWork_Click(sender As Object, e As EventArgs) Handles btnPreviousWork.Click
       workBindingSource.MovePrevious()
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnToEndWork_Click(sender As Object, e As EventArgs) Handles btnToEndWork.Click
       workBindingSource.MoveLast()
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnToBeginningWork_Click(sender As Object, e As EventArgs) Handles btnToBeginningWork.Click
       workBindingSource.MoveFirst()
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
    End Sub
 
    Private Sub btnSaveEmpl_Click(sender As Object, e As EventArgs) Handles btnSaveEmpl.Click

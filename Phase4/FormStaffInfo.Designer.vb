@@ -49,7 +49,7 @@ Partial Class FormStaffInfo
       Me.txtCity = New System.Windows.Forms.TextBox()
       Me.txtStreet = New System.Windows.Forms.TextBox()
       Me.txtCurSalary = New System.Windows.Forms.TextBox()
-      Me.txtPosition = New System.Windows.Forms.TextBox()
+      Me.txtBoxPosition = New System.Windows.Forms.TextBox()
       Me.txtNIN = New System.Windows.Forms.TextBox()
       Me.txtGender = New System.Windows.Forms.TextBox()
       Me.txtPhone = New System.Windows.Forms.TextBox()
@@ -363,13 +363,13 @@ Partial Class FormStaffInfo
       Me.txtCurSalary.Size = New System.Drawing.Size(196, 20)
       Me.txtCurSalary.TabIndex = 12
       '
-      'txtPosition
+      'txtBoxPosition
       '
-      Me.txtPosition.Location = New System.Drawing.Point(101, 288)
-      Me.txtPosition.Margin = New System.Windows.Forms.Padding(2)
-      Me.txtPosition.Name = "txtPosition"
-      Me.txtPosition.Size = New System.Drawing.Size(196, 20)
-      Me.txtPosition.TabIndex = 11
+      Me.txtBoxPosition.Location = New System.Drawing.Point(101, 288)
+      Me.txtBoxPosition.Margin = New System.Windows.Forms.Padding(2)
+      Me.txtBoxPosition.Name = "txtBoxPosition"
+      Me.txtBoxPosition.Size = New System.Drawing.Size(196, 20)
+      Me.txtBoxPosition.TabIndex = 11
       '
       'txtNIN
       '
@@ -852,6 +852,7 @@ Partial Class FormStaffInfo
       '
       'DTPickDOB
       '
+      Me.DTPickDOB.CustomFormat = "mm/dd/yyyy"
       Me.DTPickDOB.Location = New System.Drawing.Point(101, 219)
       Me.DTPickDOB.Name = "DTPickDOB"
       Me.DTPickDOB.Size = New System.Drawing.Size(196, 20)
@@ -924,7 +925,7 @@ Partial Class FormStaffInfo
       Me.Controls.Add(Me.txtHrsPerWk)
       Me.Controls.Add(Me.txtSalaryScale)
       Me.Controls.Add(Me.txtCurSalary)
-      Me.Controls.Add(Me.txtPosition)
+      Me.Controls.Add(Me.txtBoxPosition)
       Me.Controls.Add(Me.txtNIN)
       Me.Controls.Add(Me.txtGender)
       Me.Controls.Add(Me.txtPhone)
@@ -990,7 +991,7 @@ Partial Class FormStaffInfo
     Friend WithEvents txtCity As TextBox
     Friend WithEvents txtStreet As TextBox
     Friend WithEvents txtCurSalary As TextBox
-    Friend WithEvents txtPosition As TextBox
+    Friend WithEvents txtBoxPosition As TextBox
     Friend WithEvents txtNIN As TextBox
     Friend WithEvents txtGender As TextBox
     Friend WithEvents txtPhone As TextBox

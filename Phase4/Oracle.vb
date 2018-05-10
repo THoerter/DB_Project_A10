@@ -89,7 +89,6 @@
 
       If connected Then
          Application.Run(frmStaffInfo)
-         frmStaffInfo.LoadInfo()
       End If
    End Sub
 End Class
