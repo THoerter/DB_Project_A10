@@ -72,3 +72,7 @@ J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySa
 J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.FormStaffInfo.resources
 J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.Resources.resources
 J:\Database\Phase IV\DB_Project_A10.git\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.vbproj.GenerateResource.Cache
+C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A10.exe.config
+C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.exe
+C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.xml
+C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.pdb

@@ -104,6 +104,7 @@ Partial Class FormStaffInfo
       Me.btnSearch = New System.Windows.Forms.Button()
       Me.btnExit = New System.Windows.Forms.Button()
       Me.DTPickDOB = New System.Windows.Forms.DateTimePicker()
+      Me.btnUpdate = New System.Windows.Forms.Button()
       Me.SuspendLayout()
       '
       'Label1
@@ -312,7 +313,7 @@ Partial Class FormStaffInfo
       Me.txtStaffNo.Margin = New System.Windows.Forms.Padding(2)
       Me.txtStaffNo.Name = "txtStaffNo"
       Me.txtStaffNo.Size = New System.Drawing.Size(196, 20)
-      Me.txtStaffNo.TabIndex = 20
+      Me.txtStaffNo.TabIndex = 0
       '
       'txtFirstName
       '
@@ -320,7 +321,7 @@ Partial Class FormStaffInfo
       Me.txtFirstName.Margin = New System.Windows.Forms.Padding(2)
       Me.txtFirstName.Name = "txtFirstName"
       Me.txtFirstName.Size = New System.Drawing.Size(196, 20)
-      Me.txtFirstName.TabIndex = 21
+      Me.txtFirstName.TabIndex = 1
       '
       'txtLastName
       '
@@ -328,7 +329,7 @@ Partial Class FormStaffInfo
       Me.txtLastName.Margin = New System.Windows.Forms.Padding(2)
       Me.txtLastName.Name = "txtLastName"
       Me.txtLastName.Size = New System.Drawing.Size(196, 20)
-      Me.txtLastName.TabIndex = 22
+      Me.txtLastName.TabIndex = 2
       '
       'txtState
       '
@@ -336,7 +337,7 @@ Partial Class FormStaffInfo
       Me.txtState.Margin = New System.Windows.Forms.Padding(2)
       Me.txtState.Name = "txtState"
       Me.txtState.Size = New System.Drawing.Size(196, 20)
-      Me.txtState.TabIndex = 25
+      Me.txtState.TabIndex = 5
       '
       'txtCity
       '
@@ -344,7 +345,7 @@ Partial Class FormStaffInfo
       Me.txtCity.Margin = New System.Windows.Forms.Padding(2)
       Me.txtCity.Name = "txtCity"
       Me.txtCity.Size = New System.Drawing.Size(196, 20)
-      Me.txtCity.TabIndex = 24
+      Me.txtCity.TabIndex = 4
       '
       'txtStreet
       '
@@ -352,7 +353,7 @@ Partial Class FormStaffInfo
       Me.txtStreet.Margin = New System.Windows.Forms.Padding(2)
       Me.txtStreet.Name = "txtStreet"
       Me.txtStreet.Size = New System.Drawing.Size(196, 20)
-      Me.txtStreet.TabIndex = 23
+      Me.txtStreet.TabIndex = 3
       '
       'txtCurSalary
       '
@@ -360,7 +361,7 @@ Partial Class FormStaffInfo
       Me.txtCurSalary.Margin = New System.Windows.Forms.Padding(2)
       Me.txtCurSalary.Name = "txtCurSalary"
       Me.txtCurSalary.Size = New System.Drawing.Size(196, 20)
-      Me.txtCurSalary.TabIndex = 31
+      Me.txtCurSalary.TabIndex = 12
       '
       'txtPosition
       '
@@ -368,7 +369,7 @@ Partial Class FormStaffInfo
       Me.txtPosition.Margin = New System.Windows.Forms.Padding(2)
       Me.txtPosition.Name = "txtPosition"
       Me.txtPosition.Size = New System.Drawing.Size(196, 20)
-      Me.txtPosition.TabIndex = 30
+      Me.txtPosition.TabIndex = 11
       '
       'txtNIN
       '
@@ -376,7 +377,7 @@ Partial Class FormStaffInfo
       Me.txtNIN.Margin = New System.Windows.Forms.Padding(2)
       Me.txtNIN.Name = "txtNIN"
       Me.txtNIN.Size = New System.Drawing.Size(196, 20)
-      Me.txtNIN.TabIndex = 29
+      Me.txtNIN.TabIndex = 10
       '
       'txtGender
       '
@@ -384,7 +385,7 @@ Partial Class FormStaffInfo
       Me.txtGender.Margin = New System.Windows.Forms.Padding(2)
       Me.txtGender.Name = "txtGender"
       Me.txtGender.Size = New System.Drawing.Size(196, 20)
-      Me.txtGender.TabIndex = 28
+      Me.txtGender.TabIndex = 9
       '
       'txtPhone
       '
@@ -392,7 +393,7 @@ Partial Class FormStaffInfo
       Me.txtPhone.Margin = New System.Windows.Forms.Padding(2)
       Me.txtPhone.Name = "txtPhone"
       Me.txtPhone.Size = New System.Drawing.Size(196, 20)
-      Me.txtPhone.TabIndex = 27
+      Me.txtPhone.TabIndex = 7
       '
       'txtZip
       '
@@ -400,7 +401,7 @@ Partial Class FormStaffInfo
       Me.txtZip.Margin = New System.Windows.Forms.Padding(2)
       Me.txtZip.Name = "txtZip"
       Me.txtZip.Size = New System.Drawing.Size(196, 20)
-      Me.txtZip.TabIndex = 26
+      Me.txtZip.TabIndex = 6
       '
       'txtPayType
       '
@@ -408,7 +409,7 @@ Partial Class FormStaffInfo
       Me.txtPayType.Margin = New System.Windows.Forms.Padding(2)
       Me.txtPayType.Name = "txtPayType"
       Me.txtPayType.Size = New System.Drawing.Size(196, 20)
-      Me.txtPayType.TabIndex = 35
+      Me.txtPayType.TabIndex = 16
       '
       'txtPositionType
       '
@@ -416,7 +417,7 @@ Partial Class FormStaffInfo
       Me.txtPositionType.Margin = New System.Windows.Forms.Padding(2)
       Me.txtPositionType.Name = "txtPositionType"
       Me.txtPositionType.Size = New System.Drawing.Size(196, 20)
-      Me.txtPositionType.TabIndex = 34
+      Me.txtPositionType.TabIndex = 15
       '
       'txtHrsPerWk
       '
@@ -424,7 +425,7 @@ Partial Class FormStaffInfo
       Me.txtHrsPerWk.Margin = New System.Windows.Forms.Padding(2)
       Me.txtHrsPerWk.Name = "txtHrsPerWk"
       Me.txtHrsPerWk.Size = New System.Drawing.Size(196, 20)
-      Me.txtHrsPerWk.TabIndex = 33
+      Me.txtHrsPerWk.TabIndex = 14
       '
       'txtSalaryScale
       '
@@ -432,7 +433,7 @@ Partial Class FormStaffInfo
       Me.txtSalaryScale.Margin = New System.Windows.Forms.Padding(2)
       Me.txtSalaryScale.Name = "txtSalaryScale"
       Me.txtSalaryScale.Size = New System.Drawing.Size(196, 20)
-      Me.txtSalaryScale.TabIndex = 32
+      Me.txtSalaryScale.TabIndex = 13
       '
       'txtOrgName
       '
@@ -440,7 +441,7 @@ Partial Class FormStaffInfo
       Me.txtOrgName.Margin = New System.Windows.Forms.Padding(2)
       Me.txtOrgName.Name = "txtOrgName"
       Me.txtOrgName.Size = New System.Drawing.Size(204, 20)
-      Me.txtOrgName.TabIndex = 39
+      Me.txtOrgName.TabIndex = 22
       '
       'txtQualInst
       '
@@ -448,7 +449,7 @@ Partial Class FormStaffInfo
       Me.txtQualInst.Margin = New System.Windows.Forms.Padding(2)
       Me.txtQualInst.Name = "txtQualInst"
       Me.txtQualInst.Size = New System.Drawing.Size(204, 20)
-      Me.txtQualInst.TabIndex = 38
+      Me.txtQualInst.TabIndex = 20
       '
       'txtQualType
       '
@@ -456,7 +457,7 @@ Partial Class FormStaffInfo
       Me.txtQualType.Margin = New System.Windows.Forms.Padding(2)
       Me.txtQualType.Name = "txtQualType"
       Me.txtQualType.Size = New System.Drawing.Size(204, 20)
-      Me.txtQualType.TabIndex = 37
+      Me.txtQualType.TabIndex = 19
       '
       'Label21
       '
@@ -514,7 +515,7 @@ Partial Class FormStaffInfo
       Me.txtValForSearch.Margin = New System.Windows.Forms.Padding(2)
       Me.txtValForSearch.Name = "txtValForSearch"
       Me.txtValForSearch.Size = New System.Drawing.Size(138, 20)
-      Me.txtValForSearch.TabIndex = 46
+      Me.txtValForSearch.TabIndex = 28
       '
       'txtWorkPosition
       '
@@ -522,11 +523,11 @@ Partial Class FormStaffInfo
       Me.txtWorkPosition.Margin = New System.Windows.Forms.Padding(2)
       Me.txtWorkPosition.Name = "txtWorkPosition"
       Me.txtWorkPosition.Size = New System.Drawing.Size(204, 20)
-      Me.txtWorkPosition.TabIndex = 45
+      Me.txtWorkPosition.TabIndex = 23
       '
       'btnNewEmpl
       '
-      Me.btnNewEmpl.Location = New System.Drawing.Point(31, 482)
+      Me.btnNewEmpl.Location = New System.Drawing.Point(32, 482)
       Me.btnNewEmpl.Name = "btnNewEmpl"
       Me.btnNewEmpl.Size = New System.Drawing.Size(78, 27)
       Me.btnNewEmpl.TabIndex = 58
@@ -535,7 +536,7 @@ Partial Class FormStaffInfo
       '
       'btnSaveEmpl
       '
-      Me.btnSaveEmpl.Location = New System.Drawing.Point(115, 482)
+      Me.btnSaveEmpl.Location = New System.Drawing.Point(116, 482)
       Me.btnSaveEmpl.Name = "btnSaveEmpl"
       Me.btnSaveEmpl.Size = New System.Drawing.Size(78, 27)
       Me.btnSaveEmpl.TabIndex = 59
@@ -544,7 +545,7 @@ Partial Class FormStaffInfo
       '
       'btnDeleteEmpl
       '
-      Me.btnDeleteEmpl.Location = New System.Drawing.Point(199, 482)
+      Me.btnDeleteEmpl.Location = New System.Drawing.Point(200, 482)
       Me.btnDeleteEmpl.Name = "btnDeleteEmpl"
       Me.btnDeleteEmpl.Size = New System.Drawing.Size(78, 27)
       Me.btnDeleteEmpl.TabIndex = 60
@@ -556,7 +557,7 @@ Partial Class FormStaffInfo
       Me.DTPickQualDate.Location = New System.Drawing.Point(483, 35)
       Me.DTPickQualDate.Name = "DTPickQualDate"
       Me.DTPickQualDate.Size = New System.Drawing.Size(204, 20)
-      Me.DTPickQualDate.TabIndex = 61
+      Me.DTPickQualDate.TabIndex = 18
       '
       'btnPreviousQual
       '
@@ -585,7 +586,7 @@ Partial Class FormStaffInfo
       Me.txtQualNoDisplay.Name = "txtQualNoDisplay"
       Me.txtQualNoDisplay.ReadOnly = True
       Me.txtQualNoDisplay.Size = New System.Drawing.Size(61, 20)
-      Me.txtQualNoDisplay.TabIndex = 62
+      Me.txtQualNoDisplay.TabIndex = 21
       '
       'btnNextQual
       '
@@ -654,7 +655,7 @@ Partial Class FormStaffInfo
       Me.txtEmplIDDisplay.Name = "txtEmplIDDisplay"
       Me.txtEmplIDDisplay.ReadOnly = True
       Me.txtEmplIDDisplay.Size = New System.Drawing.Size(44, 20)
-      Me.txtEmplIDDisplay.TabIndex = 67
+      Me.txtEmplIDDisplay.TabIndex = 17
       '
       'btnDeleteQual
       '
@@ -698,14 +699,14 @@ Partial Class FormStaffInfo
       Me.DTPickStartDate.Location = New System.Drawing.Point(483, 272)
       Me.DTPickStartDate.Name = "DTPickStartDate"
       Me.DTPickStartDate.Size = New System.Drawing.Size(204, 20)
-      Me.DTPickStartDate.TabIndex = 76
+      Me.DTPickStartDate.TabIndex = 24
       '
       'DTPickEndDate
       '
       Me.DTPickEndDate.Location = New System.Drawing.Point(483, 298)
       Me.DTPickEndDate.Name = "DTPickEndDate"
       Me.DTPickEndDate.Size = New System.Drawing.Size(204, 20)
-      Me.DTPickEndDate.TabIndex = 77
+      Me.DTPickEndDate.TabIndex = 25
       '
       'Label27
       '
@@ -791,7 +792,7 @@ Partial Class FormStaffInfo
       Me.txtWorkExDisplay.Name = "txtWorkExDisplay"
       Me.txtWorkExDisplay.ReadOnly = True
       Me.txtWorkExDisplay.Size = New System.Drawing.Size(61, 20)
-      Me.txtWorkExDisplay.TabIndex = 79
+      Me.txtWorkExDisplay.TabIndex = 26
       '
       'CBoxFieldSel
       '
@@ -800,7 +801,7 @@ Partial Class FormStaffInfo
       Me.CBoxFieldSel.Location = New System.Drawing.Point(483, 407)
       Me.CBoxFieldSel.Name = "CBoxFieldSel"
       Me.CBoxFieldSel.Size = New System.Drawing.Size(138, 21)
-      Me.CBoxFieldSel.TabIndex = 87
+      Me.CBoxFieldSel.TabIndex = 27
       '
       'Label28
       '
@@ -842,7 +843,7 @@ Partial Class FormStaffInfo
       '
       'btnExit
       '
-      Me.btnExit.Location = New System.Drawing.Point(321, 521)
+      Me.btnExit.Location = New System.Drawing.Point(321, 539)
       Me.btnExit.Name = "btnExit"
       Me.btnExit.Size = New System.Drawing.Size(78, 27)
       Me.btnExit.TabIndex = 92
@@ -854,14 +855,24 @@ Partial Class FormStaffInfo
       Me.DTPickDOB.Location = New System.Drawing.Point(101, 219)
       Me.DTPickDOB.Name = "DTPickDOB"
       Me.DTPickDOB.Size = New System.Drawing.Size(196, 20)
-      Me.DTPickDOB.TabIndex = 93
+      Me.DTPickDOB.TabIndex = 8
       Me.DTPickDOB.Value = New Date(2018, 5, 8, 0, 0, 0, 0)
+      '
+      'btnUpdate
+      '
+      Me.btnUpdate.Location = New System.Drawing.Point(321, 482)
+      Me.btnUpdate.Name = "btnUpdate"
+      Me.btnUpdate.Size = New System.Drawing.Size(78, 27)
+      Me.btnUpdate.TabIndex = 93
+      Me.btnUpdate.Text = "Update"
+      Me.btnUpdate.UseVisualStyleBackColor = True
       '
       'FormStaffInfo
       '
       Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
       Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-      Me.ClientSize = New System.Drawing.Size(714, 561)
+      Me.ClientSize = New System.Drawing.Size(714, 589)
+      Me.Controls.Add(Me.btnUpdate)
       Me.Controls.Add(Me.DTPickDOB)
       Me.Controls.Add(Me.btnExit)
       Me.Controls.Add(Me.btnSearch)
@@ -1034,4 +1045,5 @@ Partial Class FormStaffInfo
    Friend WithEvents btnSearch As Button
    Friend WithEvents btnExit As Button
    Friend WithEvents DTPickDOB As DateTimePicker
+   Friend WithEvents btnUpdate As Button
 End Class

@@ -4,28 +4,50 @@ Public Class FormStaffInfo
    Private workDataView As New DataView()
    Private qualDataView As New DataView()
    Private staffBindingSource As New BindingSource
+   Private qualBindingSource As New BindingSource
+   Private workBindingSource As New BindingSource
 
    Private Sub FormStaffInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
       staffDataView.Table = Oracle.UWP_Staff
       staffBindingSource.DataSource = staffDataView
 
+
       txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "staffNo")
       txtFirstName.DataBindings.Add("Text", Oracle.UWP_Staff, "fName")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "lName")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "street")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "city")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "state")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "zip")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "phone")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "DOB")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "gender")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "NIN")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "position")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "curSalary")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "salaryScale")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "hrsPerWk")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "posPermTemp")
-      txtStaffNo.DataBindings.Add("Text", Oracle.UWP_Staff, "typeOfPay")
+      txtLastName.DataBindings.Add("Text", Oracle.UWP_Staff, "lName")
+      txtStreet.DataBindings.Add("Text", Oracle.UWP_Staff, "street")
+      txtCity.DataBindings.Add("Text", Oracle.UWP_Staff, "city")
+      txtState.DataBindings.Add("Text", Oracle.UWP_Staff, "state")
+      txtZip.DataBindings.Add("Text", Oracle.UWP_Staff, "zip")
+      txtPhone.DataBindings.Add("Text", Oracle.UWP_Staff, "phone")
+      DTPickDOB.DataBindings.Add("Text", Oracle.UWP_Staff, "DOB")
+      txtGender.DataBindings.Add("Text", Oracle.UWP_Staff, "gender")
+      txtNIN.DataBindings.Add("Text", Oracle.UWP_Staff, "NIN")
+      txtPosition.DataBindings.Add("Text", Oracle.UWP_Staff, "position")
+      txtCurSalary.DataBindings.Add("Text", Oracle.UWP_Staff, "curSalary")
+      txtSalaryScale.DataBindings.Add("Text", Oracle.UWP_Staff, "salaryScale")
+      txtHrsPerWk.DataBindings.Add("Text", Oracle.UWP_Staff, "hrsPerWk")
+      txtPositionType.DataBindings.Add("Text", Oracle.UWP_Staff, "posPermTemp")
+      txtPayType.DataBindings.Add("Text", Oracle.UWP_Staff, "typeOfPay")
+
+      qualDataView.Table = Oracle.UWP_Qualifications
+      qualBindingSource.DataSource = qualDataView
+
+      DTPickQualDate.DataBindings.Add("Text", Oracle.UWP_Qualifications, "qualDate")
+      txtQualType.DataBindings.Add("Text", Oracle.UWP_Qualifications, "type")
+      txtQualInst.DataBindings.Add("Text", Oracle.UWP_Qualifications, "instName")
+
+      workDataView.Table = Oracle.UWP_WorkExperience
+      workBindingSource.DataSource = workDataView
+
+      txtOrgName.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "orgName")
+      txtPosition.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "position")
+      DTPickStartDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "startDate")
+      DTPickEndDate.DataBindings.Add("Text", Oracle.UWP_WorkExperience, "finishDate")
+
+      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      'workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
 
    End Sub
    Public Sub LoadInfo()
@@ -71,5 +93,168 @@ Public Class FormStaffInfo
       Catch ex As Exception
          MessageBox.Show(ex.Message)
       End Try
+   End Sub
+
+   Private Sub btnNextEmpl_Click(sender As Object, e As EventArgs) Handles btnNextEmpl.Click
+      staffBindingSource.MoveNext()
+      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+   End Sub
+
+   Private Sub btnPreviousEmpl_Click(sender As Object, e As EventArgs) Handles btnPreviousEmpl.Click
+      staffBindingSource.MovePrevious()
+      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+   End Sub
+
+   Private Sub btnToEndEmpl_Click(sender As Object, e As EventArgs) Handles btnToEndEmpl.Click
+      staffBindingSource.MoveLast()
+      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+   End Sub
+
+   Private Sub btnToBeginningEmpl_Click(sender As Object, e As EventArgs) Handles btnToBeginningEmpl.Click
+      staffBindingSource.MoveFirst()
+      staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+   End Sub
+
+   Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+      Try
+         staffBindingSource.EndEdit()
+         Oracle.staffAdapter.Update(Oracle.UWP_Staff)
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+      Try
+         qualBindingSource.EndEdit()
+         Oracle.qualAdapter.Update(Oracle.UWP_Qualifications)
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+      Try
+         workBindingSource.EndEdit()
+         Oracle.workAdapter.Update(Oracle.UWP_WorkExperience)
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+   End Sub
+
+   Private Sub btnNewEmpl_Click(sender As Object, e As EventArgs) Handles btnNewEmpl.Click
+      Dim r As DataRow
+
+      r = Oracle.UWP_Staff.NewRow
+      Oracle.UWP_Staff.Rows.Add(r)
+      staffBindingSource.MoveLast()
+
+      txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
+   End Sub
+
+   Private Sub btnNewQual_Click(sender As Object, e As EventArgs) Handles btnNewQual.Click
+      Dim r As DataRow
+
+      r = Oracle.UWP_Qualifications.NewRow
+      Oracle.UWP_Qualifications.Rows.Add(r)
+      qualBindingSource.MoveLast()
+
+      txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
+   End Sub
+
+   Private Sub btnNewWork_Click(sender As Object, e As EventArgs) Handles btnNewWork.Click
+      Dim r As DataRow
+
+      r = Oracle.UWP_WorkExperience.NewRow
+      Oracle.UWP_WorkExperience.Rows.Add(r)
+      workBindingSource.MoveLast()
+
+      txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+   End Sub
+
+   Private Sub btnDeleteEmpl_Click(sender As Object, e As EventArgs) Handles btnDeleteEmpl.Click
+      btnUpdate.PerformClick()
+
+      Try
+         staffBindingSource.RemoveCurrent()
+         txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+   End Sub
+
+   Private Sub btnDeleteQual_Click(sender As Object, e As EventArgs) Handles btnDeleteQual.Click
+
+      Try
+         qualBindingSource.RemoveCurrent()
+         txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+   End Sub
+
+   Private Sub btnDeleteWork_Click(sender As Object, e As EventArgs) Handles btnDeleteWork.Click
+
+      Try
+         workBindingSource.RemoveCurrent()
+         txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+   End Sub
+
+   Private Sub btnNextQual_Click(sender As Object, e As EventArgs) Handles btnNextQual.Click
+      qualBindingSource.MoveNext()
+      'qualDataView.RowFilter = "staffNo = '" & txtQualNoDisplay.Text & "'"
+   End Sub
+
+   Private Sub btnPreviousQual_Click(sender As Object, e As EventArgs) Handles btnPreviousQual.Click
+      qualBindingSource.MovePrevious()
+   End Sub
+
+   Private Sub btnToEndQual_Click(sender As Object, e As EventArgs) Handles btnToEndQual.Click
+      qualBindingSource.MoveLast()
+   End Sub
+
+   Private Sub btnToBeginningQual_Click(sender As Object, e As EventArgs) Handles btnToBeginningQual.Click
+      qualBindingSource.MoveFirst()
+   End Sub
+
+   Private Sub btnNextWork_Click(sender As Object, e As EventArgs) Handles btnNextWork.Click
+      workBindingSource.MoveNext()
+      'workDataView.RowFilter = "staffNo = '" & txtQualNoDisplay.Text & "'"
+   End Sub
+
+   Private Sub btnPreviousWork_Click(sender As Object, e As EventArgs) Handles btnPreviousWork.Click
+      workBindingSource.MovePrevious()
+   End Sub
+
+   Private Sub btnToEndWork_Click(sender As Object, e As EventArgs) Handles btnToEndWork.Click
+      workBindingSource.MoveLast()
+   End Sub
+
+   Private Sub btnToBeginningWork_Click(sender As Object, e As EventArgs) Handles btnToBeginningWork.Click
+      workBindingSource.MoveFirst()
+   End Sub
+
+   Private Sub btnSaveEmpl_Click(sender As Object, e As EventArgs) Handles btnSaveEmpl.Click
+      Dim r As DataRowView
+      r = staffBindingSource.AddNew
+      r(0) = txtStaffNo.Text
+      staffBindingSource.MoveLast()
+   End Sub
+
+   Private Sub btnSaveQual_Click(sender As Object, e As EventArgs) Handles btnSaveQual.Click
+      Dim r As DataRowView
+      r = qualBindingSource.AddNew
+      r(0) = txtStaffNo.Text
+      qualBindingSource.MoveLast()
+   End Sub
+
+   Private Sub btnSaveWork_Click(sender As Object, e As EventArgs) Handles btnSaveWork.Click
+      Dim r As DataRowView
+      r = workBindingSource.AddNew
+      r(0) = txtStaffNo.Text
+      workBindingSource.MoveLast()
    End Sub
 End Class

@@ -1,4 +1,7 @@
 ﻿Public Class Oracle
+   Friend Shared UWP_Staff As New System.Data.DataTable("UWP_Staff")
+   Friend Shared UWP_WorkExperience As New System.Data.DataTable("UWP_WorkExperience")
+   Friend Shared UWP_Qualifications As New System.Data.DataTable("UWP_Qualifications")
 
    Public Enum ResponseType
       OK
@@ -32,9 +35,7 @@
 
    Friend Shared myTable As New System.Data.DataTable
 
-   Friend Shared UWP_Staff As New System.Data.DataTable("UWP_Staff")
-   Friend Shared UWP_WorkExperience As New System.Data.DataTable("UWP_WorkExperience")
-   Friend Shared UWP_Qualifications As New System.Data.DataTable("UWP_Qualifications")
+
 
    Public Shared Sub LogInAtRunTime()
       ' For testing 
