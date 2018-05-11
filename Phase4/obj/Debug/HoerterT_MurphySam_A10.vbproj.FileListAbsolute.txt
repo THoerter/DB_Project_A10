@@ -75,3 +75,4 @@ C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\bin\Debug\HoerterT_MurphySam_A
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.exe
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.xml
 C:\Users\tanrh\Desktop\DB_Project_10\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.pdb
+E:\Database\Homework\A10_ProjectFiles\trunk\Phase4\obj\Debug\HoerterT_MurphySam_A10.vbprojResolveAssemblyReference.cache

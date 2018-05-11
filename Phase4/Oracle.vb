@@ -36,10 +36,6 @@
    Friend Shared qualCommandBuilder As System.Data.OracleClient.OracleCommandBuilder
    Friend Shared qualTable As New System.Data.DataTable
 
-
-
-
-
    Public Shared Sub LogInAtRunTime()
       ' For testing 
       'UserName = "yangq"

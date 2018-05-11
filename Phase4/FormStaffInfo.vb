@@ -138,12 +138,20 @@ Public Class FormStaffInfo
       'this.
 
       'End If
+      'staffBindingSource.Position - 1 = 0 Then
+
       staffBindingSource.MoveNext()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+
+      If txtEmplIDDisplay.Text = "5/5" Then
+         btnNextEmpl.Enabled = False
+      Else
+         btnNextEmpl.Enabled = True
+      End If
    End Sub
 
    Private Sub btnPreviousEmpl_Click(sender As Object, e As EventArgs) Handles btnPreviousEmpl.Click
@@ -153,6 +161,12 @@ Public Class FormStaffInfo
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+
+      If txtEmplIDDisplay.Text = "1/5" Then
+         btnPreviousEmpl.Enabled = False
+      Else
+         btnPreviousEmpl.Enabled = True
+      End If
    End Sub
 
    Private Sub btnToEndEmpl_Click(sender As Object, e As EventArgs) Handles btnToEndEmpl.Click
