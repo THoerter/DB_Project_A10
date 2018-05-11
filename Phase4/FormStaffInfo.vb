@@ -1,6 +1,4 @@
-﻿'Imports System.Data.SqlClient
-Public Class FormStaffInfo
-   'Private staffDataView As New DataView()
+﻿Public Class FormStaffInfo
    Private workDataView As New DataView()
    Private qualDataView As New DataView()
    Private staffBindingSource As New BindingSource
@@ -8,7 +6,6 @@ Public Class FormStaffInfo
    Private workBindingSource As New BindingSource
 
    Private Sub FormStaffInfo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-      'staffDataView.Table = 
       staffBindingSource.DataSource = Oracle.UWP_Staff
 
       txtStaffNo.DataBindings.Add("Text", staffBindingSource, "staffNo")
@@ -44,9 +41,8 @@ Public Class FormStaffInfo
       DTPickStartDate.DataBindings.Add("Text", workBindingSource, "startDate")
       DTPickEndDate.DataBindings.Add("Text", workBindingSource, "finishDate")
 
-      'staffDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
-      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "orgName = '" & txtOrgName.Text & "'" And "startDate = '" & DTPickStartDate.Text & "'"
-      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
 
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
@@ -64,53 +60,66 @@ Public Class FormStaffInfo
       DTPickStartDate.Format = DateTimePickerFormat.Custom
       DTPickStartDate.CustomFormat = "M/dd/yyyy"
 
+      btnPreviousQual.Enabled = False
+      btnToBeginningQual.Enabled = False
+      btnPreviousWork.Enabled = False
+      btnToBeginningWork.Enabled = False
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
    End Sub
-   'Public Sub LoadInfo()
 
-   'End Sub
    Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
-      Dim field As String = CBoxFieldSel.Text
-      Dim value As String = txtValForSearch.Text
-
-      If field = "Type" Then
+      If CBoxFieldSel.Text = "type" Then
          Oracle.qualCommand.CommandText =
             "Select * " &
             "From UWP_Qualifications " &
-            "Where type = '" & value & "'"
-         Try
-            Oracle.myTable.Clear()
-            Oracle.qualAdapter.Fill(Oracle.myTable)
-         Catch ex As Exception
-            MessageBox.Show(ex.Message)
-         End Try
+            "Where " & CBoxFieldSel.Text & "= '" & txtValForSearch.Text & "'"
          MessageBox.Show(Oracle.qualCommand.CommandText)
-
-      ElseIf field = "Org Name" Then
+      ElseIf CBoxFieldSel.Text = "orgName" Then
          Oracle.workCommand.CommandText =
             "Select * " &
             "From UWP_WorkExperience " &
-            "Where orgName = '" & value & "'"
-         Try
-            Oracle.myTable.Clear()
-            Oracle.workAdapter.Fill(Oracle.myTable)
-         Catch ex As Exception
-            MessageBox.Show(ex.Message)
-         End Try
+            "Where " & CBoxFieldSel.Text & "= '" & txtValForSearch.Text & "'"
          MessageBox.Show(Oracle.workCommand.CommandText)
-
       Else
          Oracle.staffCommand.CommandText = "You haven't selected a field or a value!"
       End If
-      'Check CommandText
-      'MessageBox.Show(Oracle.staffCommand.CommandText)
 
-      'Catch Exception
-      'Try
-      '      Oracle.myTable.Clear()
-      'Oracle.workAdapter.Fill(Oracle.myTable)
-      'Catch ex As Exception
-      '      MessageBox.Show(ex.Message)
-      'End Try
+      Try
+         Oracle.workTable.Clear()
+         Oracle.myTable.Clear()
+         Oracle.qualTable.Clear()
+         Oracle.qualAdapter.Fill(Oracle.qualTable)
+         Oracle.workAdapter.Fill(Oracle.workTable)
+         Oracle.staffAdapter.Fill(Oracle.myTable)
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
+
+      qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
+      workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
    End Sub
 
    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -124,37 +133,72 @@ Public Class FormStaffInfo
       Catch ex As Exception
          MessageBox.Show(ex.Message)
       End Try
+
+
    End Sub
 
    Private Sub btnNextEmpl_Click(sender As Object, e As EventArgs) Handles btnNextEmpl.Click
-      'Dim leftStaffNum As New Integer = staffBindingSource.Position + 1
-      'Dim rightStaffNum As New Integer = staffBindingSource.Count
-      'Dim leftQualNum As New Integer = qualBindingSource.Position + 1
-      'Dim rightQualNum As New Integer = qualBindingSource.Count
-      'Dim leftWorkNum As New Integer = workBindingSource.Position + 1
-      'Dim rightWorkNum As New Integer = workBindingSource.Count
-
-      'If rightStaffNum == 0 Then
-      'this.
-
-      'End If
-      'staffBindingSource.Position - 1 = 0 Then
-
+      btnPreviousEmpl.Enabled = True
+      btnNextEmpl.Enabled = True
+      btnToEndEmpl.Enabled = True
+      btnToBeginningEmpl.Enabled = True
+      btnPreviousQual.Enabled = False
+      btnToBeginningQual.Enabled = False
+      btnPreviousWork.Enabled = False
+      btnToBeginningWork.Enabled = False
+      btnNextQual.Enabled = True
+      btnToEndQual.Enabled = True
+      btnNextWork.Enabled = True
+      btnToEndWork.Enabled = True
       staffBindingSource.MoveNext()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
-
-      If txtEmplIDDisplay.Text = "5/5" Then
+      If txtEmplIDDisplay.Text.Substring(0, 1).Equals(txtEmplIDDisplay.Text.Substring(2, 1)) Then
          btnNextEmpl.Enabled = False
-      Else
-         btnNextEmpl.Enabled = True
+         btnToEndEmpl.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
       End If
    End Sub
 
    Private Sub btnPreviousEmpl_Click(sender As Object, e As EventArgs) Handles btnPreviousEmpl.Click
+      btnPreviousEmpl.Enabled = True
+      btnNextEmpl.Enabled = True
+      btnToEndEmpl.Enabled = True
+      btnToBeginningEmpl.Enabled = True
+      btnPreviousQual.Enabled = False
+      btnToBeginningQual.Enabled = False
+      btnPreviousWork.Enabled = False
+      btnToBeginningWork.Enabled = False
+      btnNextQual.Enabled = True
+      btnToEndQual.Enabled = True
+      btnNextWork.Enabled = True
+      btnToEndWork.Enabled = True
       staffBindingSource.MovePrevious()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
@@ -162,29 +206,124 @@ Public Class FormStaffInfo
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
 
-      If txtEmplIDDisplay.Text = "1/5" Then
+      If txtEmplIDDisplay.Text.Substring(0, 1).Equals("1") Then
          btnPreviousEmpl.Enabled = False
-      Else
-         btnPreviousEmpl.Enabled = True
+         btnToBeginningEmpl.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
       End If
    End Sub
 
    Private Sub btnToEndEmpl_Click(sender As Object, e As EventArgs) Handles btnToEndEmpl.Click
+      btnToEndEmpl.Enabled = False
+      btnNextEmpl.Enabled = False
+      btnPreviousEmpl.Enabled = True
+      btnToBeginningEmpl.Enabled = True
+      btnPreviousQual.Enabled = False
+      btnToBeginningQual.Enabled = False
+      btnPreviousWork.Enabled = False
+      btnToBeginningWork.Enabled = False
+      btnNextQual.Enabled = True
+      btnToEndQual.Enabled = True
+      btnNextWork.Enabled = True
+      btnToEndWork.Enabled = True
       staffBindingSource.MoveLast()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
    End Sub
 
    Private Sub btnToBeginningEmpl_Click(sender As Object, e As EventArgs) Handles btnToBeginningEmpl.Click
+      btnToEndEmpl.Enabled = True
+      btnNextEmpl.Enabled = True
+      btnPreviousEmpl.Enabled = False
+      btnToBeginningEmpl.Enabled = False
+      btnPreviousQual.Enabled = False
+      btnToBeginningQual.Enabled = False
+      btnPreviousWork.Enabled = False
+      btnToBeginningWork.Enabled = False
+      btnNextQual.Enabled = True
+      btnToEndQual.Enabled = True
+      btnNextWork.Enabled = True
+      btnToEndWork.Enabled = True
       staffBindingSource.MoveFirst()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("0") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
+      If txtQualNoDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
+      If txtWorkExDisplay.Text.Substring(2, 1).Equals("1") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
    End Sub
 
    Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
@@ -276,22 +415,44 @@ Public Class FormStaffInfo
    End Sub
 
    Private Sub btnNextQual_Click(sender As Object, e As EventArgs) Handles btnNextQual.Click
+      btnPreviousQual.Enabled = True
+      btnNextQual.Enabled = True
+      btnToEndQual.Enabled = True
+      btnToBeginningQual.Enabled = True
+
       qualBindingSource.MoveNext()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+
+      If txtQualNoDisplay.Text.Substring(0, 1).Equals(txtQualNoDisplay.Text.Substring(2, 1)) Then
+         btnNextQual.Enabled = False
+         btnToEndQual.Enabled = False
+      End If
    End Sub
 
    Private Sub btnPreviousQual_Click(sender As Object, e As EventArgs) Handles btnPreviousQual.Click
+      btnPreviousQual.Enabled = True
+      btnNextQual.Enabled = True
+      btnToEndQual.Enabled = True
+      btnToBeginningQual.Enabled = True
       qualBindingSource.MovePrevious()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+      If txtQualNoDisplay.Text.Substring(0, 1).Equals("1") Then
+         btnPreviousQual.Enabled = False
+         btnToBeginningQual.Enabled = False
+      End If
    End Sub
 
    Private Sub btnToEndQual_Click(sender As Object, e As EventArgs) Handles btnToEndQual.Click
+      btnToEndQual.Enabled = False
+      btnNextQual.Enabled = False
+      btnPreviousQual.Enabled = True
+      btnToBeginningQual.Enabled = True
       qualBindingSource.MoveLast()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'" 'And "type = '" & txtQualType.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
@@ -301,6 +462,10 @@ Public Class FormStaffInfo
    End Sub
 
    Private Sub btnToBeginningQual_Click(sender As Object, e As EventArgs) Handles btnToBeginningQual.Click
+      btnToEndQual.Enabled = True
+      btnNextQual.Enabled = True
+      btnPreviousQual.Enabled = False
+      btnToBeginningQual.Enabled = False
       qualBindingSource.MoveFirst()
       qualDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
@@ -310,22 +475,43 @@ Public Class FormStaffInfo
    End Sub
 
    Private Sub btnNextWork_Click(sender As Object, e As EventArgs) Handles btnNextWork.Click
+      btnPreviousWork.Enabled = True
+      btnNextWork.Enabled = True
+      btnToEndWork.Enabled = True
+      btnToBeginningWork.Enabled = True
       workBindingSource.MoveNext()
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+
+      If txtWorkExDisplay.Text.Substring(0, 1).Equals(txtWorkExDisplay.Text.Substring(2, 1)) Then
+         btnNextWork.Enabled = False
+         btnToEndWork.Enabled = False
+      End If
    End Sub
 
    Private Sub btnPreviousWork_Click(sender As Object, e As EventArgs) Handles btnPreviousWork.Click
+      btnPreviousWork.Enabled = True
+      btnNextWork.Enabled = True
+      btnToEndWork.Enabled = True
+      btnToBeginningWork.Enabled = True
       workBindingSource.MovePrevious()
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
       txtQualNoDisplay.Text = (qualBindingSource.Position + 1) & "/" & qualBindingSource.Count
       txtWorkExDisplay.Text = (workBindingSource.Position + 1) & "/" & workBindingSource.Count
+      If txtWorkExDisplay.Text.Substring(0, 1).Equals("1") Then
+         btnPreviousWork.Enabled = False
+         btnToBeginningWork.Enabled = False
+      End If
    End Sub
 
    Private Sub btnToEndWork_Click(sender As Object, e As EventArgs) Handles btnToEndWork.Click
+      btnToEndWork.Enabled = False
+      btnNextWork.Enabled = False
+      btnPreviousWork.Enabled = True
+      btnToBeginningWork.Enabled = True
       workBindingSource.MoveLast()
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
@@ -334,6 +520,10 @@ Public Class FormStaffInfo
    End Sub
 
    Private Sub btnToBeginningWork_Click(sender As Object, e As EventArgs) Handles btnToBeginningWork.Click
+      btnToEndWork.Enabled = True
+      btnNextWork.Enabled = True
+      btnPreviousWork.Enabled = False
+      btnToBeginningWork.Enabled = False
       workBindingSource.MoveFirst()
       workDataView.RowFilter = "staffNo = '" & txtStaffNo.Text & "'"
       txtEmplIDDisplay.Text = (staffBindingSource.Position + 1) & "/" & staffBindingSource.Count
@@ -342,10 +532,6 @@ Public Class FormStaffInfo
    End Sub
 
    Private Sub btnSaveEmpl_Click(sender As Object, e As EventArgs) Handles btnSaveEmpl.Click
-      'Dim r As DataRowView
-      'r = staffBindingSource.AddNew
-      'r(0) = txtStaffNo.Text
-      'staffBindingSource.MoveLast()
       Try
          staffBindingSource.EndEdit()
          Oracle.staffAdapter.Update(Oracle.UWP_Staff)

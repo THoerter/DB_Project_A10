@@ -797,7 +797,7 @@ Partial Class FormStaffInfo
       'CBoxFieldSel
       '
       Me.CBoxFieldSel.FormattingEnabled = True
-      Me.CBoxFieldSel.Items.AddRange(New Object() {"Type", "Org Name"})
+      Me.CBoxFieldSel.Items.AddRange(New Object() {"type", "orgName"})
       Me.CBoxFieldSel.Location = New System.Drawing.Point(483, 407)
       Me.CBoxFieldSel.Name = "CBoxFieldSel"
       Me.CBoxFieldSel.Size = New System.Drawing.Size(138, 21)

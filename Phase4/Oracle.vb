@@ -37,11 +37,6 @@
    Friend Shared qualTable As New System.Data.DataTable
 
    Public Shared Sub LogInAtRunTime()
-      ' For testing 
-      'UserName = "yangq"
-      'PassWd = "cs3630"
-      'Server = "EDDB"
-
       OracleConnection.ConnectionString = "Data Source = " & Server & ";Persist Security Info=True;User ID=" & UserName & ";Password=" & PassWd & ";Unicode=True"
 
       staffCommand.CommandType = CommandType.Text
@@ -67,9 +62,6 @@
    End Sub
 
    Public Shared Sub main()
-      'LogInAtRunTime()
-
-      'Application.Run(New FormClassBooking)
       Dim connected As Boolean
 
       While Not connected
